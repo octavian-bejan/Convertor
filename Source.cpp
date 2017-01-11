@@ -186,39 +186,131 @@ void afisare_optiuniConsum()
     cout<<endl;
     cout<<"l->Litru     km->Kilometru     mi->Mila      gal->Galon"<<endl;
 }
+/*
+void convertesteLungime(int from,int to,double quantity)
+{
+    cout<<"DAdadasdasd"<<endl;
+}
+void convertesteArie(int from,int to,double quantity)
+{}
+void convertesteVolum(int from, int to,double quantity)
+{}
+void convertesteTimp(int from, int to,double quantity)
+{}
+void convertesteViteza(int from, int to,double quantity)
+{}
+*/
+void convertesteTemperatura(int from, int to,double quantity)
+{
+    switch(from){
+        case 1:
+        {
+            switch(to){
+                case 1: cout<<quantity<<" "<<grade<<"C===>"<<quantity<<" "<<grade<<"C"<<endl;break;
+                case 2: cout<<quantity<<" "<<grade<<"C===>"<<32+quantity*1.8<<" "<<grade<<"F"<<endl;break;
+                case 3: cout<<quantity<<" "<<grade<<"C===>"<<273.15+quantity<<" "<<grade<<"K"<<endl;break;
+                default:break;}
+                break;
+        }
+        case 2:
+        {
+           switch(to){
+               case 1: cout<<quantity<<" "<<grade<<"F===>"<<(quantity-32)/1.8<<" "<<grade<<"C"<<endl;break;
+               case 2: cout<<quantity<<" "<<grade<<"F===>"<<quantity<<" "<<grade<<"F"<<endl;break;
+               case 3: cout<<quantity<<" "<<grade<<"F===>"<<(quantity-32)/1.8+273.15<<" "<<grade<<"K"<<endl;break;
+               default:break;
+           }
+           break;
+        }
+        case 3:
+        {
+            switch(to){
+                case 1: cout<<quantity<<" "<<grade<<"K===>"<<quantity-273.15<<" "<<grade<<"C"<<endl;break;
+                case 2: cout<<quantity<<" "<<grade<<"K===>"<<32+(quantity-273.15)*1.8<<" "<<grade<<"F"<<endl;break;
+                case 3: cout<<quantity<<" "<<grade<<"K===>"<<quantity<<" "<<grade<<"K"<<endl;break;
+                default:break;
+            }
+            break;
+        }
+        default:
+            break;
+    }
+}
+/*
+void convertesteMasa(int from, int to,double quantity)
+{}
+void convertesteEnergie(int from, int to,double quantity)
+{}
+void convertestePresiune(int from, int to,double quantity)
+{}
+void convertesteDensitate(int from, int to,double quantity)
+{}
+*/
+void convertesteConsum(int from, int to,double quantity)
+{
+    switch(from){
+        case 1:
+            switch(to){
+                case 1:cout<<quantity<<" l/100km ===>"<<quantity<<" l/100km"<<endl;break;
+                case 2:cout<<quantity<<" l/100km ===>"<<235.21/quantity<<" mi/gal(US)"<<endl;break;
+                case 3:cout<<quantity<<" l/100km ===>"<<282.48/quantity<<" mi/gal(UK)"<<endl;break;
+                case 4:cout<<quantity<<" l/100km ===>"<<100/quantity<<" km/l"<<endl;break;
+                default:break;
+            }
+        break;
+        case 2:
+            switch(to){
+                case 1:cout<<quantity<<" mi/gal(US) ===>"<<235.21/quantity<<" l/100km"<<endl;break;
+                case 2:cout<<quantity<<" mi/gal(US) ===>"<<quantity<<" mi/gal(US)"<<endl;break;
+                case 3:cout<<quantity<<" mi/gal(US) ===>"<<quantity*1.2009<<" mi/gal(UK)"<<endl;break;
+                case 4:cout<<quantity<<" mi/gal(US) ===>"<<100/(235.21/quantity)<<" km/l"<<endl;break;
+                default:break;
+            }
+        break;
+        case 3:
+        switch(to){
+                case 1:cout<<quantity<<" mi/gal(UK) ===>"<<282.48/quantity<<" l/100km"<<endl;break;
+                case 2:cout<<quantity<<" mi/gal(UK) ===>"<<quantity*0.8326<<" mi/gal(US)"<<endl;break;
+                case 3:cout<<quantity<<" mi/gal(UK) ===>"<<quantity<<" mi/gal(UK)"<<endl;break;
+                case 4:cout<<quantity<<" mi/gal(UK) ===>"<<100/(282.48/quantity)<<" km/l"<<endl;break;
+                default:break;
+            }
+        break;
+    case 4:
+    switch(to){
+                case 1:cout<<quantity<<" km/l ===>"<<100/quantity<<" l/100km"<<endl;break;
+                case 2:cout<<quantity<<" km/l ===>"<<235.21/(100/quantity)<<" mi/gal(US)"<<endl;break;
+                case 3:cout<<quantity<<" km/l ===>"<<282.48/(100/quantity)<<" mi/gal(UK)"<<endl;break;
+                case 4:cout<<quantity<<" km/l ===>"<<quantity<<" km/l"<<endl;break;
+                default:break;
+            }
+    break;
+        default:break;
+    }
+}
+
 void choose_and_printLungime()//9
 {
     int From,To,Quant;
     afisare_optiuniLungime();cout<<endl<<endl;
     cout<<"What you want to convert?"<<endl;
     cin>>From;
-    if(From<1 || From>9)
-    {
         while(From<0 || From>9)
         {
             cout<<"This option doesn`t exist.Please choose another one."<<endl;
             cin>>From;
         }
-    }
-    else
-    {
         cout<<"In what you want to convert?"<<endl;
         cin>>To;
-        if(To<1 || To>9)
-        {
             while(To<1 || To>9)
             {
                 cout<<"This option doesn`t exist.Please choose another one."<<endl;
                 cin>>To;
             }
-        }
-        else
-        {
             cout<<"What quantity do you want to convert?"<<endl;
             cin>>Quant;
-        }
-    }
-convertesteLungime(From,To,Quant);
+
+//convertesteLungime(From,To,Quant);
 }
 void choose_and_printArie()//10
 {
@@ -226,33 +318,21 @@ void choose_and_printArie()//10
     afisare_optiuniArie();cout<<endl<<endl;
     cout<<"What you want to convert?"<<endl;
     cin>>From;
-    if(From<1 || From>10)
-    {
         while(From<0 || From>10)
         {
             cout<<"This option doesn`t exist.Please choose another one."<<endl;
             cin>>From;
         }
-    }
-    else
-    {
         cout<<"In what you want to convert?"<<endl;
         cin>>To;
-        if(To<1 || To>10)
-        {
             while(To<1 || To>10)
             {
                 cout<<"This option doesn`t exist.Please choose another one."<<endl;
                 cin>>To;
             }
-        }
-        else
-        {
             cout<<"What quantity do you want to convert?"<<endl;
             cin>>Quant;
-        }
-    }
-    convertesteArie(From,To,Quant);
+    //convertesteArie(From,To,Quant);
 }
 void choose_and_printVolum()//12
 {
@@ -260,32 +340,20 @@ void choose_and_printVolum()//12
     afisare_optiuniVolum();cout<<endl<<endl;
     cout<<"What you want to convert?"<<endl;
     cin>>From;
-    if(From<1 || From>12)
-    {
         while(From<0 || From>12)
         {
             cout<<"This option doesn`t exist.Please choose another one."<<endl;
             cin>>From;
         }
-    }
-    else
-    {
         cout<<"In what you want to convert?"<<endl;
         cin>>To;
-        if(To<1 || To>12)
-        {
             while(To<1 || To>12)
             {
                 cout<<"This option doesn`t exist.Please choose another one."<<endl;
                 cin>>To;
             }
-        }
-        else
-        {
             cout<<"What quantity do you want to convert?"<<endl;
             cin>>Quant;
-        }
-    }
 }
 void choose_and_printTimp()//6
 {
@@ -293,32 +361,20 @@ void choose_and_printTimp()//6
     afisare_optiuniTimp();cout<<endl<<endl;
     cout<<"What you want to convert?"<<endl;
     cin>>From;
-    if(From<1 || From>6)
-    {
         while(From<0 || From>6)
         {
             cout<<"This option doesn`t exist.Please choose another one."<<endl;
             cin>>From;
         }
-    }
-    else
-    {
         cout<<"In what you want to convert?"<<endl;
         cin>>To;
-        if(To<1 || To>6)
-        {
             while(To<1 || To>6)
             {
                 cout<<"This option doesn`t exist.Please choose another one."<<endl;
                 cin>>To;
             }
-        }
-        else
-        {
             cout<<"What quantity do you want to convert?"<<endl;
             cin>>Quant;
-        }
-    }
 }
 void choose_and_printViteza()//15
 {
@@ -326,65 +382,43 @@ void choose_and_printViteza()//15
     afisare_optiuniViteza();cout<<endl<<endl;
     cout<<"What you want to convert?"<<endl;
     cin>>From;
-    if(From<1 || From>15)
-    {
         while(From<0 || From>15)
         {
             cout<<"This option doesn`t exist.Please choose another one."<<endl;
             cin>>From;
         }
-    }
-    else
-    {
         cout<<"In what you want to convert?"<<endl;
         cin>>To;
-        if(To<1 || To>15)
-        {
             while(To<1 || To>15)
             {
                 cout<<"This option doesn`t exist.Please choose another one."<<endl;
                 cin>>To;
             }
-        }
-        else
-        {
             cout<<"What quantity do you want to convert?"<<endl;
             cin>>Quant;
-        }
-    }
 }
-void choose_and_printTemperatura()//4
+void choose_and_printTemperatura()//3 ok
 {
-    int From,To,Quant;
+    int From,To;
+    double Quant;
     afisare_optiuniTemperatura();cout<<endl<<endl;
     cout<<"What you want to convert?"<<endl;
     cin>>From;
-    if(From<1 || From>4)
-    {
-        while(From<0 || From>4)
+        while(From<0 || From>3)
         {
             cout<<"This option doesn`t exist.Please choose another one."<<endl;
             cin>>From;
         }
-    }
-    else
-    {
         cout<<"In what you want to convert?"<<endl;
         cin>>To;
-        if(To<1 || To>4)
-        {
-            while(To<1 || To>4)
+            while(To<1 || To>3)
             {
                 cout<<"This option doesn`t exist.Please choose another one."<<endl;
                 cin>>To;
             }
-        }
-        else
-        {
             cout<<"What quantity do you want to convert?"<<endl;
             cin>>Quant;
-        }
-    }
+            convertesteTemperatura(From,To,Quant);
 }
 void choose_and_printMasa()//7
 {
@@ -392,32 +426,20 @@ void choose_and_printMasa()//7
     afisare_optiuniMasa();cout<<endl<<endl;
     cout<<"What you want to convert?"<<endl;
     cin>>From;
-    if(From<1 || From>7)
-    {
         while(From<0 || From>7)
         {
             cout<<"This option doesn`t exist.Please choose another one."<<endl;
             cin>>From;
         }
-    }
-    else
-    {
         cout<<"In what you want to convert?"<<endl;
         cin>>To;
-        if(To<1 || To>7)
-        {
             while(To<1 || To>7)
             {
                 cout<<"This option doesn`t exist.Please choose another one."<<endl;
                 cin>>To;
             }
-        }
-        else
-        {
             cout<<"What quantity do you want to convert?"<<endl;
             cin>>Quant;
-        }
-    }
 }
 void choose_and_printEnergie()//8
 {
@@ -425,32 +447,20 @@ void choose_and_printEnergie()//8
     afisare_optiuniEnergie();cout<<endl<<endl;
     cout<<"What you want to convert?"<<endl;
     cin>>From;
-    if(From<1 || From>8)
-    {
         while(From<0 || From>8)
         {
             cout<<"This option doesn`t exist.Please choose another one."<<endl;
             cin>>From;
         }
-    }
-    else
-    {
         cout<<"In what you want to convert?"<<endl;
         cin>>To;
-        if(To<1 || To>8)
-        {
             while(To<1 || To>8)
             {
                 cout<<"This option doesn`t exist.Please choose another one."<<endl;
                 cin>>To;
             }
-        }
-        else
-        {
             cout<<"What quantity do you want to convert?"<<endl;
             cin>>Quant;
-        }
-    }
 }
 void choose_and_printPresiune()//10
 {
@@ -458,32 +468,20 @@ void choose_and_printPresiune()//10
     afisare_optiuniPresiune();cout<<endl<<endl;
     cout<<"What you want to convert?"<<endl;
     cin>>From;
-    if(From<1 || From>10)
-    {
         while(From<0 || From>10)
         {
             cout<<"This option doesn`t exist.Please choose another one."<<endl;
             cin>>From;
         }
-    }
-    else
-    {
         cout<<"In what you want to convert?"<<endl;
         cin>>To;
-        if(To<1 || To>10)
-        {
             while(To<1 || To>10)
             {
                 cout<<"This option doesn`t exist.Please choose another one."<<endl;
                 cin>>To;
             }
-        }
-        else
-        {
             cout<<"What quantity do you want to convert?"<<endl;
             cin>>Quant;
-        }
-    }
 }
 void choose_and_printDensitate()//11
 {
@@ -491,95 +489,48 @@ void choose_and_printDensitate()//11
     afisare_optiuniDensitate();cout<<endl<<endl;
     cout<<"What you want to convert?"<<endl;
     cin>>From;
-    if(From<1 || From>11)
-    {
         while(From<0 || From>11)
         {
             cout<<"This option doesn`t exist.Please choose another one."<<endl;
             cin>>From;
         }
-    }
-    else
-    {
         cout<<"In what you want to convert?"<<endl;
         cin>>To;
-        if(To<1 || To>11)
-        {
             while(To<1 || To>11)
             {
                 cout<<"This option doesn`t exist.Please choose another one."<<endl;
                 cin>>To;
             }
-        }
-        else
-        {
             cout<<"What quantity do you want to convert?"<<endl;
             cin>>Quant;
-        }
-    }
 }
-void choose_and_printConsum()//4
+void choose_and_printConsum()//4 ok
 {
     int From,To,Quant;
     afisare_optiuniConsum();cout<<endl<<endl;
     cout<<"What you want to convert?"<<endl;
     cin>>From;
-    if(From<1 || From>4)
-    {
         while(From<0 || From>4)
         {
             cout<<"This option doesn`t exist.Please choose another one."<<endl;
             cin>>From;
         }
-    }
-    else
-    {
         cout<<"In what you want to convert?"<<endl;
         cin>>To;
-        if(To<1 || To>4)
-        {
             while(To<1 || To>4)
             {
                 cout<<"This option doesn`t exist.Please choose another one."<<endl;
                 cin>>To;
             }
-        }
-        else
-        {
             cout<<"What quantity do you want to convert?"<<endl;
             cin>>Quant;
-        }
-    }
+            convertesteConsum(From,To,Quant);
 }
-
-int convertesteLungime(int from,int to,int quantity)
-{}
-int convertesteArie(int from,int to,int quantity)
-{}
-int convertesteVolum(int from, int to,int quantity)
-{}
-int convertesteTimp(int from, int to,int quantity)
-{}
-int convertesteViteza(int from, int to,int quantity)
-{}
-int convertesteTemperatura(int from, int to,int quantity)
-{}
-int convertesteMasa(int from, int to,int quantity)
-{}
-int convertesteEnergie(int from, int to,int quantity)
-{}
-int convertestePresiune(int from, int to,int quantity)
-{}
-int convertesteDensitate(int from, int to,int quantity)
-{}
-int convertesteConsum(int from, int to,int quantity)
-{}
-
 
 int main()
 {
 	int alegere,ok=1,from,to;
-    choose_and_printLungime();
+    choose_and_printConsum();
 	cin.get(); cin.get();
 	return 0;
 }

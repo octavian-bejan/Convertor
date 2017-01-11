@@ -197,9 +197,313 @@ void convertesteVolum(int from, int to,double quantity)
 {}
 void convertesteTimp(int from, int to,double quantity)
 {}
-void convertesteViteza(int from, int to,double quantity)
-{}
 */
+void convertesteViteza(int from, int to,double quantity)
+{
+    switch(from){
+        case 1:
+                switch(to){
+                    case 1:cout<<quantity<<" cm/min ===> "<<quantity<<" cm/min"<<endl;break;
+                    case 2:cout<<quantity<<" cm/min ===> "<<quantity/60<<" cm/s"<<endl;break;
+                    case 3:cout<<quantity<<" cm/min ===> "<<quantity*1.968496<<" fph"<<endl;break;
+                    case 4:cout<<quantity<<" cm/min ===> "<<quantity*0.000546<<" fps"<<endl;break;
+                    case 5:cout<<quantity<<" cm/min ===> "<<quantity*0.00656<<" ips"<<endl;break;
+                    case 6:cout<<quantity<<" cm/min ===> "<<quantity*0.0006<<" km/h"<<endl;break;
+                    case 7:cout<<quantity<<" cm/min ===> "<<quantity*0.00001<<" km/min"<<endl;break;
+                    case 8:cout<<quantity<<" cm/min ===> "<<quantity*(1.666667e-7)<<" km/s"<<endl;break;
+                    case 9:cout<<quantity<<" cm/min ===> "<<quantity*0.5999<<" m/h"<<endl;break;
+                    case 10:cout<<quantity<<" cm/min ===> "<<quantity*0.01<<" m/min"<<endl;break;
+                    case 11:cout<<quantity<<" cm/min ===> "<<quantity*0.00016<<" mps"<<endl;break;
+                    case 12:cout<<quantity<<" cm/min ===> "<<quantity*0.000373<<" mph"<<endl;break;
+                    case 13:cout<<quantity<<" cm/min ===> "<<quantity*(6.0e-6)<<" mi/min"<<endl;break;
+                    case 14:cout<<quantity<<" cm/min ===> "<<quantity*(1.035618e-7)<<" mi/s"<<endl;break;
+                    case 15:cout<<quantity<<" cm/min ===> "<<quantity*0.000324<<" nmi/h"<<endl;break;
+                    default:break;
+                }
+            break;
+        case 2:
+            switch(to){
+                    case 1:cout<<quantity<<" cm/s ===> "<<quantity*60<<" cm/min"<<endl;break;
+                    case 2:cout<<quantity<<" cm/s ===> "<<quantity<<" cm/s"<<endl;break;
+                    case 3:cout<<quantity<<" cm/s ===> "<<quantity*118.109<<" fph"<<endl;break;
+                    case 4:cout<<quantity<<" cm/s ===> "<<quantity*0.03280<<" fps"<<endl;break;
+                    case 5:cout<<quantity<<" cm/s ===> "<<quantity*0.3937<<" ips"<<endl;break;
+                    case 6:cout<<quantity<<" cm/s ===> "<<quantity*0.036<<" km/h"<<endl;break;
+                    case 7:cout<<quantity<<" cm/s ===> "<<quantity*0.0006<<" km/min"<<endl;break;
+                    case 8:cout<<quantity<<" cm/s ===> "<<quantity*0.00001<<" km/s"<<endl;break;
+                    case 9:cout<<quantity<<" cm/s ===> "<<quantity*36<<" m/h"<<endl;break;
+                    case 10:cout<<quantity<<" cm/s ===> "<<quantity*0.6<<" m/min"<<endl;break;
+                    case 11:cout<<quantity<<" cm/s ===> "<<quantity*0.01<<" mps"<<endl;break;
+                    case 12:cout<<quantity<<" cm/s ===> "<<quantity*0.02236<<" mph"<<endl;break;
+                    case 13:cout<<quantity<<" cm/s ===> "<<quantity*0.0003728<<" mi/min"<<endl;break;
+                    case 14:cout<<quantity<<" cm/s ===> "<<quantity*0.00000621<<" mi/s"<<endl;break;
+                    case 15:cout<<quantity<<" cm/s ===> "<<quantity*0.01944<<" nmi/h"<<endl;break;
+                    default:break;
+                }
+            break;
+        case 3:
+        switch(to){
+                    case 1:cout<<quantity<<" fph ===> "<<quantity*0.5080<<" cm/min"<<endl;break;
+                    case 2:cout<<quantity<<" fph ===> "<<quantity*0.08466<<" cm/s"<<endl;break;
+                    case 3:cout<<quantity<<" fph ===> "<<quantity<<" fph"<<endl;break;
+                    case 4:cout<<quantity<<" fph ===> "<<quantity*0.000277<<" fps"<<endl;break;
+                    case 5:cout<<quantity<<" fph ===> "<<quantity*0.0033<<" ips"<<endl;break;
+                    case 6:cout<<quantity<<" fph ===> "<<quantity*0.000304<<" km/h"<<endl;break;
+                    case 7:cout<<quantity<<" fph ===> "<<quantity*0.00000508<<" km/min"<<endl;break;
+                    case 8:cout<<quantity<<" fph ===> "<<quantity*(8.4667e-8)<<" km/s"<<endl;break;
+                    case 9:cout<<quantity<<" fph ===> "<<quantity*0.30480<<" m/h"<<endl;break;
+                    case 10:cout<<quantity<<" fph ===> "<<quantity*0.00508<<" m/min"<<endl;break;
+                    case 11:cout<<quantity<<" fph ===> "<<quantity*0.000084667<<" mps"<<endl;break;
+                    case 12:cout<<quantity<<" fph ===> "<<quantity*0.0001893<<" mph"<<endl;break;
+                    case 13:cout<<quantity<<" fph ===> "<<quantity*0.000003156<<" mi/min"<<endl;break;
+                    case 14:cout<<quantity<<" fph ===> "<<quantity*5.2609<<" mi/s"<<endl;break;
+                    case 15:cout<<quantity<<" fph ===> "<<quantity*0.0001645<<" nmi/h"<<endl;break;
+                    default:break;
+                }
+            break;
+        case 4:
+            switch(to){
+                    case 1:cout<<quantity<<" fps ===> "<<quantity*1828.7996<<" cm/min"<<endl;break;
+                    case 2:cout<<quantity<<" fps ===> "<<quantity*30.48<<" cm/s"<<endl;break;
+                    case 3:cout<<quantity<<" fps ===> "<<quantity*3599.9858<<" fph"<<endl;break;
+                    case 4:cout<<quantity<<" fps ===> "<<quantity<<" fps"<<endl;break;
+                    case 5:cout<<quantity<<" fps ===> "<<quantity*12<<" ips"<<endl;break;
+                    case 6:cout<<quantity<<" fps ===> "<<quantity*1.0972<<" km/h"<<endl;break;
+                    case 7:cout<<quantity<<" fps ===> "<<quantity*0.01828<<" km/min"<<endl;break;
+                    case 8:cout<<quantity<<" fps ===> "<<quantity*0.0003048<<" km/s"<<endl;break;
+                    case 9:cout<<quantity<<" fps ===> "<<quantity*1097.279<<" m/h"<<endl;break;
+                    case 10:cout<<quantity<<" fps ===> "<<quantity*18.2879<<" m/min"<<endl;break;
+                    case 11:cout<<quantity<<" fps ===> "<<quantity*0.3048<<" mps"<<endl;break;
+                    case 12:cout<<quantity<<" fps ===> "<<quantity*0.6818<<" mph"<<endl;break;
+                    case 13:cout<<quantity<<" fps ===> "<<quantity*0.01136<<" mi/min"<<endl;break;
+                    case 14:cout<<quantity<<" fps ===> "<<quantity*0.00018939<<" mi/s"<<endl;break;
+                    case 15:cout<<quantity<<" fps ===> "<<quantity*0.5925<<" nmi/h"<<endl;break;
+                    default:break;
+                }
+            break;
+        case 5:
+            switch(to){
+                    case 1:cout<<quantity<<" ips ===> "<<quantity<<" cm/min"<<endl;break;
+                    case 2:cout<<quantity<<" ips ===> "<<quantity<<" cm/s"<<endl;break;
+                    case 3:cout<<quantity<<" ips ===> "<<quantity<<" fph"<<endl;break;
+                    case 4:cout<<quantity<<" ips ===> "<<quantity<<" fps"<<endl;break;
+                    case 5:cout<<quantity<<" ips ===> "<<quantity<<" ips"<<endl;break;
+                    case 6:cout<<quantity<<" ips ===> "<<quantity<<" km/h"<<endl;break;
+                    case 7:cout<<quantity<<" ips ===> "<<quantity<<" km/min"<<endl;break;
+                    case 8:cout<<quantity<<" ips ===> "<<quantity<<" km/s"<<endl;break;
+                    case 9:cout<<quantity<<" ips ===> "<<quantity<<" m/h"<<endl;break;
+                    case 10:cout<<quantity<<" ips ===> "<<quantity<<" m/min"<<endl;break;
+                    case 11:cout<<quantity<<" ips ===> "<<quantity<<" mps"<<endl;break;
+                    case 12:cout<<quantity<<" ips ===> "<<quantity<<" mph"<<endl;break;
+                    case 13:cout<<quantity<<" ips ===> "<<quantity<<" mi/min"<<endl;break;
+                    case 14:cout<<quantity<<" ips ===> "<<quantity<<" mi/s"<<endl;break;
+                    case 15:cout<<quantity<<" ips ===> "<<quantity<<" nmi/h"<<endl;break;
+                    default:break;
+                }
+            break;
+        case 6:
+            switch(to){
+                    case 1:cout<<quantity<<" km/h ===> "<<quantity<<" cm/min"<<endl;break;
+                    case 2:cout<<quantity<<" km/h ===> "<<quantity<<" cm/s"<<endl;break;
+                    case 3:cout<<quantity<<" km/h ===> "<<quantity<<" fph"<<endl;break;
+                    case 4:cout<<quantity<<" km/h ===> "<<quantity<<" fps"<<endl;break;
+                    case 5:cout<<quantity<<" km/h ===> "<<quantity<<" ips"<<endl;break;
+                    case 6:cout<<quantity<<" km/h ===> "<<quantity<<" km/h"<<endl;break;
+                    case 7:cout<<quantity<<" km/h ===> "<<quantity<<" km/min"<<endl;break;
+                    case 8:cout<<quantity<<" km/h ===> "<<quantity<<" km/s"<<endl;break;
+                    case 9:cout<<quantity<<" km/h ===> "<<quantity<<" m/h"<<endl;break;
+                    case 10:cout<<quantity<<" km/h ===> "<<quantity<<" m/min"<<endl;break;
+                    case 11:cout<<quantity<<" km/h ===> "<<quantity<<" mps"<<endl;break;
+                    case 12:cout<<quantity<<" km/h ===> "<<quantity<<" mph"<<endl;break;
+                    case 13:cout<<quantity<<" km/h ===> "<<quantity<<" mi/min"<<endl;break;
+                    case 14:cout<<quantity<<" km/h ===> "<<quantity<<" mi/s"<<endl;break;
+                    case 15:cout<<quantity<<" km/h ===> "<<quantity<<" nmi/h"<<endl;break;
+                    default:break;
+                }
+            break;
+        case 7:
+            switch(to){
+                    case 1:cout<<quantity<<" km/min ===> "<<quantity<<" cm/min"<<endl;break;
+                    case 2:cout<<quantity<<" km/min ===> "<<quantity<<" cm/s"<<endl;break;
+                    case 3:cout<<quantity<<" km/min ===> "<<quantity<<" fph"<<endl;break;
+                    case 4:cout<<quantity<<" km/min ===> "<<quantity<<" fps"<<endl;break;
+                    case 5:cout<<quantity<<" km/min ===> "<<quantity<<" ips"<<endl;break;
+                    case 6:cout<<quantity<<" km/min ===> "<<quantity<<" km/h"<<endl;break;
+                    case 7:cout<<quantity<<" km/min ===> "<<quantity<<" km/min"<<endl;break;
+                    case 8:cout<<quantity<<" km/min ===> "<<quantity<<" km/s"<<endl;break;
+                    case 9:cout<<quantity<<" km/min ===> "<<quantity<<" m/h"<<endl;break;
+                    case 10:cout<<quantity<<" km/min ===> "<<quantity<<" m/min"<<endl;break;
+                    case 11:cout<<quantity<<" km/min ===> "<<quantity<<" mps"<<endl;break;
+                    case 12:cout<<quantity<<" km/min ===> "<<quantity<<" mph"<<endl;break;
+                    case 13:cout<<quantity<<" km/min ===> "<<quantity<<" mi/min"<<endl;break;
+                    case 14:cout<<quantity<<" km/min ===> "<<quantity<<" mi/s"<<endl;break;
+                    case 15:cout<<quantity<<" km/min ===> "<<quantity<<" nmi/h"<<endl;break;
+                    default:break;
+                }
+            break;
+        case 8:
+            switch(to){
+                    case 1:cout<<quantity<<" km/s ===> "<<quantity<<" cm/min"<<endl;break;
+                    case 2:cout<<quantity<<" km/s ===> "<<quantity<<" cm/s"<<endl;break;
+                    case 3:cout<<quantity<<" km/s ===> "<<quantity<<" fph"<<endl;break;
+                    case 4:cout<<quantity<<" km/s ===> "<<quantity<<" fps"<<endl;break;
+                    case 5:cout<<quantity<<" km/s ===> "<<quantity<<" ips"<<endl;break;
+                    case 6:cout<<quantity<<" km/s ===> "<<quantity<<" km/min"<<endl;break;
+                    case 7:cout<<quantity<<" km/s ===> "<<quantity<<" km/min"<<endl;break;
+                    case 8:cout<<quantity<<" km/s ===> "<<quantity<<" km/s"<<endl;break;
+                    case 9:cout<<quantity<<" km/s ===> "<<quantity<<" m/h"<<endl;break;
+                    case 10:cout<<quantity<<" km/s ===> "<<quantity<<" m/min"<<endl;break;
+                    case 11:cout<<quantity<<" km/s ===> "<<quantity<<" mps"<<endl;break;
+                    case 12:cout<<quantity<<" km/s ===> "<<quantity<<" mph"<<endl;break;
+                    case 13:cout<<quantity<<" km/s ===> "<<quantity<<" mi/min"<<endl;break;
+                    case 14:cout<<quantity<<" km/s ===> "<<quantity<<" mi/s"<<endl;break;
+                    case 15:cout<<quantity<<" km/s ===> "<<quantity<<" nmi/h"<<endl;break;
+                    default:break;
+                }
+            break;
+        case 9:
+            switch(to){
+                    case 1:cout<<quantity<<" m/h ===> "<<quantity<<" cm/min"<<endl;break;
+                    case 2:cout<<quantity<<" m/h ===> "<<quantity<<" cm/s"<<endl;break;
+                    case 3:cout<<quantity<<" m/h ===> "<<quantity<<" fph"<<endl;break;
+                    case 4:cout<<quantity<<" m/h ===> "<<quantity<<" fps"<<endl;break;
+                    case 5:cout<<quantity<<" m/h ===> "<<quantity<<" ips"<<endl;break;
+                    case 6:cout<<quantity<<" m/h ===> "<<quantity<<" km/h"<<endl;break;
+                    case 7:cout<<quantity<<" m/h ===> "<<quantity<<" km/min"<<endl;break;
+                    case 8:cout<<quantity<<" m/h ===> "<<quantity<<" km/s"<<endl;break;
+                    case 9:cout<<quantity<<" m/h ===> "<<quantity<<" m/h"<<endl;break;
+                    case 10:cout<<quantity<<" m/h ===> "<<quantity<<" m/min"<<endl;break;
+                    case 11:cout<<quantity<<" m/h ===> "<<quantity<<" mps"<<endl;break;
+                    case 12:cout<<quantity<<" m/h ===> "<<quantity<<" mph"<<endl;break;
+                    case 13:cout<<quantity<<" m/h ===> "<<quantity<<" mi/min"<<endl;break;
+                    case 14:cout<<quantity<<" m/h ===> "<<quantity<<" mi/s"<<endl;break;
+                    case 15:cout<<quantity<<" m/h ===> "<<quantity<<" nmi/h"<<endl;break;
+                    default:break;
+                }
+            break;
+        case 10:
+            switch(to){
+                    case 1:cout<<quantity<<" m/min ===> "<<quantity<<" cm/min"<<endl;break;
+                    case 2:cout<<quantity<<" m/min ===> "<<quantity<<" cm/s"<<endl;break;
+                    case 3:cout<<quantity<<" m/min ===> "<<quantity<<" fph"<<endl;break;
+                    case 4:cout<<quantity<<" m/min ===> "<<quantity<<" fps"<<endl;break;
+                    case 5:cout<<quantity<<" m/min ===> "<<quantity<<" ips"<<endl;break;
+                    case 6:cout<<quantity<<" m/min ===> "<<quantity<<" km/h"<<endl;break;
+                    case 7:cout<<quantity<<" m/min ===> "<<quantity<<" km/min"<<endl;break;
+                    case 8:cout<<quantity<<" m/min ===> "<<quantity<<" km/s"<<endl;break;
+                    case 9:cout<<quantity<<" m/min ===> "<<quantity<<" m/h"<<endl;break;
+                    case 10:cout<<quantity<<" m/min ===> "<<quantity<<" m/min"<<endl;break;
+                    case 11:cout<<quantity<<" m/min ===> "<<quantity<<" mps"<<endl;break;
+                    case 12:cout<<quantity<<" m/min ===> "<<quantity<<" mph"<<endl;break;
+                    case 13:cout<<quantity<<" m/min ===> "<<quantity<<" mi/min"<<endl;break;
+                    case 14:cout<<quantity<<" m/min ===> "<<quantity<<" mi/s"<<endl;break;
+                    case 15:cout<<quantity<<" m/min ===> "<<quantity<<" nmi/h"<<endl;break;
+                    default:break;
+                }
+            break;
+        case 11:
+            switch(to){
+                    case 1:cout<<quantity<<" mps ===> "<<quantity<<" cm/min"<<endl;break;
+                    case 2:cout<<quantity<<" mps ===> "<<quantity<<" cm/s"<<endl;break;
+                    case 3:cout<<quantity<<" mps ===> "<<quantity<<" fph"<<endl;break;
+                    case 4:cout<<quantity<<" mps ===> "<<quantity<<" fps"<<endl;break;
+                    case 5:cout<<quantity<<" mps ===> "<<quantity<<" ips"<<endl;break;
+                    case 6:cout<<quantity<<" mps ===> "<<quantity<<" km/h"<<endl;break;
+                    case 7:cout<<quantity<<" mps ===> "<<quantity<<" km/min"<<endl;break;
+                    case 8:cout<<quantity<<" mps ===> "<<quantity<<" km/s"<<endl;break;
+                    case 9:cout<<quantity<<" mps ===> "<<quantity<<" m/h"<<endl;break;
+                    case 10:cout<<quantity<<" mps ===> "<<quantity<<" m/min"<<endl;break;
+                    case 11:cout<<quantity<<" mps ===> "<<quantity<<" mps"<<endl;break;
+                    case 12:cout<<quantity<<" mps ===> "<<quantity<<" mph"<<endl;break;
+                    case 13:cout<<quantity<<" mps ===> "<<quantity<<" mi/min"<<endl;break;
+                    case 14:cout<<quantity<<" mps ===> "<<quantity<<" mi/s"<<endl;break;
+                    case 15:cout<<quantity<<" mps ===> "<<quantity<<" nmi/h"<<endl;break;
+                }
+            break;
+        case 12:
+            switch(to){
+                    case 1:cout<<quantity<<" mph ===> "<<quantity<<" cm/min"<<endl;break;
+                    case 2:cout<<quantity<<" mph ===> "<<quantity<<" cm/s"<<endl;break;
+                    case 3:cout<<quantity<<" mph ===> "<<quantity<<" fph"<<endl;break;
+                    case 4:cout<<quantity<<" mph ===> "<<quantity<<" fps"<<endl;break;
+                    case 5:cout<<quantity<<" mph ===> "<<quantity<<" ips"<<endl;break;
+                    case 6:cout<<quantity<<" mph ===> "<<quantity<<" km/h"<<endl;break;
+                    case 7:cout<<quantity<<" mph ===> "<<quantity<<" km/min"<<endl;break;
+                    case 8:cout<<quantity<<" mph ===> "<<quantity<<" km/s"<<endl;break;
+                    case 9:cout<<quantity<<" mph ===> "<<quantity<<" m/h"<<endl;break;
+                    case 10:cout<<quantity<<" mph ===> "<<quantity<<" m/min"<<endl;break;
+                    case 11:cout<<quantity<<" mph ===> "<<quantity<<" mps"<<endl;break;
+                    case 12:cout<<quantity<<" mph ===> "<<quantity<<" mph"<<endl;break;
+                    case 13:cout<<quantity<<" mph ===> "<<quantity<<" mi/min"<<endl;break;
+                    case 14:cout<<quantity<<" mph ===> "<<quantity<<" mi/s"<<endl;break;
+                    case 15:cout<<quantity<<" mph ===> "<<quantity<<" nmi/h"<<endl;break;
+                    default:break;
+                }
+            break;
+        case 13:
+            switch(to){
+                    case 1:cout<<quantity<<" mi/min ===> "<<quantity<<" cm/min"<<endl;break;
+                    case 2:cout<<quantity<<" mi/min ===> "<<quantity<<" cm/s"<<endl;break;
+                    case 3:cout<<quantity<<" mi/min ===> "<<quantity<<" fph"<<endl;break;
+                    case 4:cout<<quantity<<" mi/min ===> "<<quantity<<" fps"<<endl;break;
+                    case 5:cout<<quantity<<" mi/min ===> "<<quantity<<" ips"<<endl;break;
+                    case 6:cout<<quantity<<" mi/min ===> "<<quantity<<" km/h"<<endl;break;
+                    case 7:cout<<quantity<<" mi/min ===> "<<quantity<<" km/min"<<endl;break;
+                    case 8:cout<<quantity<<" mi/min ===> "<<quantity<<" km/s"<<endl;break;
+                    case 9:cout<<quantity<<" mi/min ===> "<<quantity<<" m/h"<<endl;break;
+                    case 10:cout<<quantity<<" mi/min ===> "<<quantity<<" m/min"<<endl;break;
+                    case 11:cout<<quantity<<" mi/min ===> "<<quantity<<" mps"<<endl;break;
+                    case 12:cout<<quantity<<" mi/min ===> "<<quantity<<" mph"<<endl;break;
+                    case 13:cout<<quantity<<" mi/min ===> "<<quantity<<" mi/min"<<endl;break;
+                    case 14:cout<<quantity<<" mi/min ===> "<<quantity<<" mi/s"<<endl;break;
+                    case 15:cout<<quantity<<" mi/min ===> "<<quantity<<" nmi/h"<<endl;break;
+                    default:break;
+                }
+            break;
+        case 14:
+            switch(to){
+                    case 1:cout<<quantity<<" mi/s ===> "<<quantity<<" cm/min"<<endl;break;
+                    case 2:cout<<quantity<<" mi/s ===> "<<quantity<<" cm/s"<<endl;break;
+                    case 3:cout<<quantity<<" mi/s ===> "<<quantity<<" fph"<<endl;break;
+                    case 4:cout<<quantity<<" mi/s ===> "<<quantity<<" fps"<<endl;break;
+                    case 5:cout<<quantity<<" mi/s ===> "<<quantity<<" ips"<<endl;break;
+                    case 6:cout<<quantity<<" mi/s ===> "<<quantity<<" km/h"<<endl;break;
+                    case 7:cout<<quantity<<" mi/s ===> "<<quantity<<" km/min"<<endl;break;
+                    case 8:cout<<quantity<<" mi/s ===> "<<quantity<<" km/s"<<endl;break;
+                    case 9:cout<<quantity<<" mi/s ===> "<<quantity<<" m/h"<<endl;break;
+                    case 10:cout<<quantity<<" mi/s ===> "<<quantity<<" m/min"<<endl;break;
+                    case 11:cout<<quantity<<" mi/s ===> "<<quantity<<" mps"<<endl;break;
+                    case 12:cout<<quantity<<" mi/s ===> "<<quantity<<" mph"<<endl;break;
+                    case 13:cout<<quantity<<" mi/s ===> "<<quantity<<" mi/min"<<endl;break;
+                    case 14:cout<<quantity<<" mi/s ===> "<<quantity<<" mi/s"<<endl;break;
+                    case 15:cout<<quantity<<" mi/s ===> "<<quantity<<" nmi/h"<<endl;break;
+                    default:break;
+                }
+            break;
+        case 15:
+            switch(to){
+                    case 1:cout<<quantity<<" nmi/h ===> "<<quantity<<" cm/min"<<endl;break;
+                    case 2:cout<<quantity<<" nmi/h ===> "<<quantity<<" cm/s"<<endl;break;
+                    case 3:cout<<quantity<<" nmi/h ===> "<<quantity<<" fph"<<endl;break;
+                    case 4:cout<<quantity<<" nmi/h ===> "<<quantity<<" fps"<<endl;break;
+                    case 5:cout<<quantity<<" nmi/h ===> "<<quantity<<" ips"<<endl;break;
+                    case 6:cout<<quantity<<" nmi/h ===> "<<quantity<<" km/h"<<endl;break;
+                    case 7:cout<<quantity<<" nmi/h ===> "<<quantity<<" km/min"<<endl;break;
+                    case 8:cout<<quantity<<" nmi/h ===> "<<quantity<<" km/s"<<endl;break;
+                    case 9:cout<<quantity<<" nmi/h ===> "<<quantity<<" m/h"<<endl;break;
+                    case 10:cout<<quantity<<" nmi/h ===> "<<quantity<<" m/min"<<endl;break;
+                    case 11:cout<<quantity<<" nmi/h ===> "<<quantity<<" mps"<<endl;break;
+                    case 12:cout<<quantity<<" nmi/h ===> "<<quantity<<" mph"<<endl;break;
+                    case 13:cout<<quantity<<" nmi/h ===> "<<quantity<<" mi/min"<<endl;break;
+                    case 14:cout<<quantity<<" nmi/h ===> "<<quantity<<" mi/s"<<endl;break;
+                    case 15:cout<<quantity<<" nmi/h ===> "<<quantity<<" nmi/h"<<endl;break;
+                    default:break;
+                }
+            break;
+        default:break;
+    }
+}
+
 void convertesteTemperatura(int from, int to,double quantity)
 {
     switch(from){
@@ -396,6 +700,7 @@ void choose_and_printViteza()//15
             }
             cout<<"What quantity do you want to convert?"<<endl;
             cin>>Quant;
+            convertesteViteza(From,To,Quant);
 }
 void choose_and_printTemperatura()//3 ok
 {
@@ -530,7 +835,7 @@ void choose_and_printConsum()//4 ok
 int main()
 {
 	int alegere,ok=1,from,to;
-    choose_and_printConsum();
+    choose_and_printViteza();
 	cin.get(); cin.get();
 	return 0;
 }

@@ -191,8 +191,164 @@ void convertesteLungime(int from,int to,double quantity)
 {
     cout<<"DAdadasdasd"<<endl;
 }
+*/
 void convertesteArie(int from,int to,double quantity)
-{}
+{
+    switch(from){
+        case 1:
+            switch(to){
+                case 1:cout<<quantity<<" a===>"<<quantity<<" a"<<endl;break;
+                case 2:cout<<quantity<<" a===>"<<quantity*0.02471<<" ac"<<endl;break;
+                case 3:cout<<quantity<<" a===>"<<quantity/100<<" ha"<<endl;break;
+                case 4:cout<<quantity<<" a===>"<<quantity*100000000<<" mm"<<square<<endl;break;
+                case 5:cout<<quantity<<" a===>"<<quantity*1000000<<" cm"<<square<<endl;break;
+                case 6:cout<<quantity<<" a===>"<<quantity*100<<" m"<<square<<endl;break;
+                case 7:cout<<quantity<<" a===>"<<quantity/10000<<" km"<<square<<endl;break;
+                case 8:cout<<quantity<<" a===>"<<quantity*1076.4262<<" ft"<<square<<endl;break;
+                case 9:cout<<quantity<<" a===>"<<quantity*154990.7<<" Inches"<<square<<endl;break;
+                case 10:cout<<quantity<<" a===>"<<quantity*119.5989<<" yz"<<square<<endl;break;
+                default:break;
+            }
+            break;
+        case 2:
+            switch(to){
+                case 1:cout<<quantity<<" ac===>"<<quantity*40.46856119<<" a"<<endl;break;
+                case 2:cout<<quantity<<" ac===>"<<quantity<<" ac"<<endl;break;
+                case 3:cout<<quantity<<" ac===>"<<quantity*0.404685<<" ha"<<endl;break;
+                case 4:cout<<quantity<<" ac===>"<<quantity*4046856119<<" mm"<<square<<endl;break;
+                case 5:cout<<quantity<<" ac===>"<<quantity*40468561.19<<" cm"<<square<<endl;break;
+                case 6:cout<<quantity<<" ac===>"<<quantity*4046.856119<<" m"<<square<<endl;break;
+                case 7:cout<<quantity<<" ac===>"<<quantity*0.00404685<<" km"<<square<<endl;break;
+                case 8:cout<<quantity<<" ac===>"<<quantity*43561.4221<<" ft"<<square<<endl;break;
+                case 9:cout<<quantity<<" ac===>"<<quantity*6272250.64941<<" Inches"<<square<<endl;break;
+                case 10:cout<<quantity<<" ac===>"<<quantity*4839.996<<" yz"<<square<<endl;break;
+                default:break;
+            }
+            break;
+        case 3:
+            switch(to){
+                case 1:cout<<quantity<<" ha===>"<<quantity*100<<" a"<<endl;break;
+                case 2:cout<<quantity<<" ha===>"<<quantity*2.4710<<" ac"<<endl;break;
+                case 3:cout<<quantity<<" ha===>"<<quantity<<" ha"<<endl;break;
+                case 4:cout<<quantity<<" ha===>"<<quantity*10000000000<<" mm"<<square<<endl;break;
+                case 5:cout<<quantity<<" ha===>"<<quantity*100000000<<" cm"<<square<<endl;break;
+                case 6:cout<<quantity<<" ha===>"<<quantity*10000<<" m"<<square<<endl;break;
+                case 7:cout<<quantity<<" ha===>"<<quantity/100<<" km"<<square<<endl;break;
+                case 8:cout<<quantity<<" ha===>"<<quantity*107642.6264<<" ft"<<square<<endl;break;
+                case 9:cout<<quantity<<" ha===>"<<quantity*15499070.0557<<" Inches"<<square<<endl;break;
+                case 10:cout<<quantity<<" ha===>"<<quantity*11959.8939<<" yz"<<square<<endl;break;
+                default:break;
+            }
+            break;
+        case 4:
+            switch(to){
+                case 1:cout<<quantity<<" mm"<<square<<"===>"<<quantity*(1e-8)<<" a"<<endl;break;
+                case 2:cout<<quantity<<" mm"<<square<<"===>"<<quantity*2.4710<<" ac"<<endl;break;
+                case 3:cout<<quantity<<" mm"<<square<<"===>"<<quantity*(1e-10)<<" ha"<<endl;break;
+                case 4:cout<<quantity<<" mm"<<square<<"===>"<<quantity<<" mm"<<square<<endl;break;
+                case 5:cout<<quantity<<" mm"<<square<<"===>"<<quantity/100<<" cm"<<square<<endl;break;
+                case 6:cout<<quantity<<" mm"<<square<<"===>"<<quantity/1000000<<" m"<<square<<endl;break;
+                case 7:cout<<quantity<<" mm"<<square<<"===>"<<quantity*(1e-12)<<" km"<<square<<endl;break;
+                case 8:cout<<quantity<<" mm"<<square<<"===>"<<quantity*0.00001076<<" ft"<<square<<endl;break;
+                case 9:cout<<quantity<<" mm"<<square<<"===>"<<quantity*0.00154990<<" Inches"<<square<<endl;break;
+                case 10:cout<<quantity<<" mm"<<square<<"===>"<<quantity*0.000001195<<" yz"<<square<<endl;break;
+                default:break;
+            }
+            break;
+        case 5:
+            switch(to){
+                case 1:cout<<quantity<<" cm"<<square<<"===>"<<quantity/1000000<<" a"<<endl;break;
+                case 2:cout<<quantity<<" cm"<<square<<"===>"<<quantity*2.4710<<" ac"<<endl;break;
+                case 3:cout<<quantity<<" cm"<<square<<"===>"<<quantity*(1e-8)<<" ha"<<endl;break;
+                case 4:cout<<quantity<<" cm"<<square<<"===>"<<quantity*100<<" mm"<<square<<endl;break;
+                case 5:cout<<quantity<<" cm"<<square<<"===>"<<quantity<<" cm"<<square<<endl;break;
+                case 6:cout<<quantity<<" cm"<<square<<"===>"<<quantity/10000<<" m"<<square<<endl;break;
+                case 7:cout<<quantity<<" cm"<<square<<"===>"<<quantity*(1e-10)<<" km"<<square<<endl;break;
+                case 8:cout<<quantity<<" cm"<<square<<"===>"<<quantity*0.001076<<" ft"<<square<<endl;break;
+                case 9:cout<<quantity<<" cm"<<square<<"===>"<<quantity*0.1549<<" Inches"<<square<<endl;break;
+                case 10:cout<<quantity<<" cm"<<square<<"===>"<<quantity*0.00011959<<" yz"<<square<<endl;break;
+                default:break;
+            }
+            break;
+        case 6:
+            switch(to){
+                case 1:cout<<quantity<<" m"<<square<<"===>"<<quantity/100<<" a"<<endl;break;
+                case 2:cout<<quantity<<" m"<<square<<"===>"<<quantity*0.00024710<<" ac"<<endl;break;
+                case 3:cout<<quantity<<" m"<<square<<"===>"<<quantity/10000<<" ha"<<endl;break;
+                case 4:cout<<quantity<<" m"<<square<<"===>"<<quantity*1000000<<" mm"<<square<<endl;break;
+                case 5:cout<<quantity<<" m"<<square<<"===>"<<quantity*10000<<" cm"<<square<<endl;break;
+                case 6:cout<<quantity<<" m"<<square<<"===>"<<quantity<<" m"<<square<<endl;break;
+                case 7:cout<<quantity<<" m"<<square<<"===>"<<quantity/1000000<<" km"<<square<<endl;break;
+                case 8:cout<<quantity<<" m"<<square<<"===>"<<quantity*10.7642<<" ft"<<square<<endl;break;
+                case 9:cout<<quantity<<" m"<<square<<"===>"<<quantity*1549.9070<<" Inches"<<square<<endl;break;
+                case 10:cout<<quantity<<" m"<<square<<"===>"<<quantity*1.19598<<" yz"<<square<<endl;break;
+                default:break;
+            }
+            break;
+        case 7:
+            switch(to){
+                case 1:cout<<quantity<<" km"<<square<<"===>"<<quantity*10000<<" a"<<endl;break;
+                case 2:cout<<quantity<<" km"<<square<<"===>"<<quantity*247.1053<<" ac"<<endl;break;
+                case 3:cout<<quantity<<" km"<<square<<"===>"<<quantity*100<<" ha"<<endl;break;
+                case 4:cout<<quantity<<" km"<<square<<"===>"<<quantity*1000000000000<<" mm"<<square<<endl;break;
+                case 5:cout<<quantity<<" km"<<square<<"===>"<<quantity*10000000000<<" cm"<<square<<endl;break;
+                case 6:cout<<quantity<<" km"<<square<<"===>"<<quantity*1000000<<" m"<<square<<endl;break;
+                case 7:cout<<quantity<<" km"<<square<<"===>"<<quantity<<" km"<<square<<endl;break;
+                case 8:cout<<quantity<<" km"<<square<<"===>"<<quantity*10764262.6480<<" ft"<<square<<endl;break;
+                case 9:cout<<quantity<<" km"<<square<<"===>"<<quantity*1549907005.579<<" Inches"<<square<<endl;break;
+                case 10:cout<<quantity<<" km"<<square<<"===>"<<quantity*1195989.39404<<" yz"<<square<<endl;break;
+                default:break;
+            }
+            break;
+        case 8:
+            switch(to){
+                case 1:cout<<quantity<<" ft"<<square<<"===>"<<quantity*0.000929<<" a"<<endl;break;
+                case 2:cout<<quantity<<" ft"<<square<<"===>"<<quantity*0.000022956<<" ac"<<endl;break;
+                case 3:cout<<quantity<<" ft"<<square<<"===>"<<quantity*0.00000929<<" ha"<<endl;break;
+                case 4:cout<<quantity<<" ft"<<square<<"===>"<<quantity*92900<<" mm"<<square<<endl;break;
+                case 5:cout<<quantity<<" ft"<<square<<"===>"<<quantity*929<<" cm"<<square<<endl;break;
+                case 6:cout<<quantity<<" ft"<<square<<"===>"<<quantity*0.0929<<" m"<<square<<endl;break;
+                case 7:cout<<quantity<<" ft"<<square<<"===>"<<quantity*(9.29e-8)<<" km"<<square<<endl;break;
+                case 8:cout<<quantity<<" ft"<<square<<"===>"<<quantity<<" ft"<<square<<endl;break;
+                case 9:cout<<quantity<<" ft"<<square<<"===>"<<quantity*143.98636<<" Inches"<<square<<endl;break;
+                case 10:cout<<quantity<<" ft"<<square<<"===>"<<quantity*0.1111074<<" yz"<<square<<endl;break;
+                default:break;
+            }
+            break;
+        case 9:
+            switch(to){
+                case 1:cout<<quantity<<" Inches"<<square<<"===>"<<quantity*0.000006451<<" a"<<endl;break;
+                case 2:cout<<quantity<<" Inches"<<square<<"===>"<<quantity*1.5943<<" ac"<<endl;break;
+                case 3:cout<<quantity<<" Inches"<<square<<"===>"<<quantity*(6.452e-8)<<" ha"<<endl;break;
+                case 4:cout<<quantity<<" Inches"<<square<<"===>"<<quantity*645.2<<" mm"<<square<<endl;break;
+                case 5:cout<<quantity<<" Inches"<<square<<"===>"<<quantity*6.452<<" cm"<<square<<endl;break;
+                case 6:cout<<quantity<<" Inches"<<square<<"===>"<<quantity*0.0006452<<" m"<<square<<endl;break;
+                case 7:cout<<quantity<<" Inches"<<square<<"===>"<<quantity*(6.542e-10)<<" km"<<square<<endl;break;
+                case 8:cout<<quantity<<" Inches"<<square<<"===>"<<quantity*0.006945<<" ft"<<square<<endl;break;
+                case 9:cout<<quantity<<" Inches"<<square<<"===>"<<quantity<<" Inches"<<square<<endl;break;
+                case 10:cout<<quantity<<" Inches"<<square<<"===>"<<quantity*0.000771652<<" yz"<<square<<endl;break;
+                default:break;
+            }
+            break;
+        case 10:
+            switch(to){
+                case 1:cout<<quantity<<" yz"<<square<<"===>"<<quantity*0.00836<<" a"<<endl;break;
+                case 2:cout<<quantity<<" yz"<<square<<"===>"<<quantity*0.00020661<<" ac"<<endl;break;
+                case 3:cout<<quantity<<" yz"<<square<<"===>"<<quantity*0.0000836<<" ha"<<endl;break;
+                case 4:cout<<quantity<<" yz"<<square<<"===>"<<quantity*836127.816<<" mm"<<square<<endl;break;
+                case 5:cout<<quantity<<" yz"<<square<<"===>"<<quantity*8361.27816<<" cm"<<square<<endl;break;
+                case 6:cout<<quantity<<" yz"<<square<<"===>"<<quantity*0.836127816<<" m"<<square<<endl;break;
+                case 7:cout<<quantity<<" yz"<<square<<"===>"<<quantity*(8.361278e-7)<<" km"<<square<<endl;break;
+                case 8:cout<<quantity<<" yz"<<square<<"===>"<<quantity*9.0002994187<<" ft"<<square<<endl;break;
+                case 9:cout<<quantity<<" yz"<<square<<"===>"<<quantity*1295.9203<<" Inches"<<square<<endl;break;
+                case 10:cout<<quantity<<" yz"<<square<<"===>"<<quantity<<" yz"<<square<<endl;break;
+                default:break;
+            }
+            break;
+        default:break;
+    }
+}
+/*
 void convertesteVolum(int from, int to,double quantity)
 {}
 void convertesteTimp(int from, int to,double quantity)
@@ -283,219 +439,219 @@ void convertesteViteza(int from, int to,double quantity)
             break;
         case 5:
             switch(to){
-                    case 1:cout<<quantity<<" ips ===> "<<quantity<<" cm/min"<<endl;break;
-                    case 2:cout<<quantity<<" ips ===> "<<quantity<<" cm/s"<<endl;break;
-                    case 3:cout<<quantity<<" ips ===> "<<quantity<<" fph"<<endl;break;
-                    case 4:cout<<quantity<<" ips ===> "<<quantity<<" fps"<<endl;break;
+                    case 1:cout<<quantity<<" ips ===> "<<quantity*152.4<<" cm/min"<<endl;break;
+                    case 2:cout<<quantity<<" ips ===> "<<quantity*2.54<<" cm/s"<<endl;break;
+                    case 3:cout<<quantity<<" ips ===> "<<quantity*300<<" fph"<<endl;break;
+                    case 4:cout<<quantity<<" ips ===> "<<quantity*0.0833<<" fps"<<endl;break;
                     case 5:cout<<quantity<<" ips ===> "<<quantity<<" ips"<<endl;break;
-                    case 6:cout<<quantity<<" ips ===> "<<quantity<<" km/h"<<endl;break;
-                    case 7:cout<<quantity<<" ips ===> "<<quantity<<" km/min"<<endl;break;
-                    case 8:cout<<quantity<<" ips ===> "<<quantity<<" km/s"<<endl;break;
-                    case 9:cout<<quantity<<" ips ===> "<<quantity<<" m/h"<<endl;break;
-                    case 10:cout<<quantity<<" ips ===> "<<quantity<<" m/min"<<endl;break;
-                    case 11:cout<<quantity<<" ips ===> "<<quantity<<" mps"<<endl;break;
-                    case 12:cout<<quantity<<" ips ===> "<<quantity<<" mph"<<endl;break;
-                    case 13:cout<<quantity<<" ips ===> "<<quantity<<" mi/min"<<endl;break;
-                    case 14:cout<<quantity<<" ips ===> "<<quantity<<" mi/s"<<endl;break;
-                    case 15:cout<<quantity<<" ips ===> "<<quantity<<" nmi/h"<<endl;break;
+                    case 6:cout<<quantity<<" ips ===> "<<quantity*0.0914<<" km/h"<<endl;break;
+                    case 7:cout<<quantity<<" ips ===> "<<quantity*0.001524<<" km/min"<<endl;break;
+                    case 8:cout<<quantity<<" ips ===> "<<quantity*0.0000254<<" km/s"<<endl;break;
+                    case 9:cout<<quantity<<" ips ===> "<<quantity*91.44<<" m/h"<<endl;break;
+                    case 10:cout<<quantity<<" ips ===> "<<quantity*1.524<<" m/min"<<endl;break;
+                    case 11:cout<<quantity<<" ips ===> "<<quantity*0.0254<<" mps"<<endl;break;
+                    case 12:cout<<quantity<<" ips ===> "<<quantity*0.0568<<" mph"<<endl;break;
+                    case 13:cout<<quantity<<" ips ===> "<<quantity*0.0009469<<" mi/min"<<endl;break;
+                    case 14:cout<<quantity<<" ips ===> "<<quantity*0.00001578<<" mi/s"<<endl;break;
+                    case 15:cout<<quantity<<" ips ===> "<<quantity*0.04937<<" nmi/h"<<endl;break;
                     default:break;
                 }
             break;
         case 6:
             switch(to){
-                    case 1:cout<<quantity<<" km/h ===> "<<quantity<<" cm/min"<<endl;break;
-                    case 2:cout<<quantity<<" km/h ===> "<<quantity<<" cm/s"<<endl;break;
-                    case 3:cout<<quantity<<" km/h ===> "<<quantity<<" fph"<<endl;break;
-                    case 4:cout<<quantity<<" km/h ===> "<<quantity<<" fps"<<endl;break;
-                    case 5:cout<<quantity<<" km/h ===> "<<quantity<<" ips"<<endl;break;
+                    case 1:cout<<quantity<<" km/h ===> "<<quantity*1666.67<<" cm/min"<<endl;break;
+                    case 2:cout<<quantity<<" km/h ===> "<<quantity*27.778<<" cm/s"<<endl;break;
+                    case 3:cout<<quantity<<" km/h ===> "<<quantity*3280.8398<<" fph"<<endl;break;
+                    case 4:cout<<quantity<<" km/h ===> "<<quantity*0.9113<<" fps"<<endl;break;
+                    case 5:cout<<quantity<<" km/h ===> "<<quantity*10.9361<<" ips"<<endl;break;
                     case 6:cout<<quantity<<" km/h ===> "<<quantity<<" km/h"<<endl;break;
-                    case 7:cout<<quantity<<" km/h ===> "<<quantity<<" km/min"<<endl;break;
-                    case 8:cout<<quantity<<" km/h ===> "<<quantity<<" km/s"<<endl;break;
-                    case 9:cout<<quantity<<" km/h ===> "<<quantity<<" m/h"<<endl;break;
-                    case 10:cout<<quantity<<" km/h ===> "<<quantity<<" m/min"<<endl;break;
-                    case 11:cout<<quantity<<" km/h ===> "<<quantity<<" mps"<<endl;break;
-                    case 12:cout<<quantity<<" km/h ===> "<<quantity<<" mph"<<endl;break;
-                    case 13:cout<<quantity<<" km/h ===> "<<quantity<<" mi/min"<<endl;break;
-                    case 14:cout<<quantity<<" km/h ===> "<<quantity<<" mi/s"<<endl;break;
-                    case 15:cout<<quantity<<" km/h ===> "<<quantity<<" nmi/h"<<endl;break;
+                    case 7:cout<<quantity<<" km/h ===> "<<quantity*0.01667<<" km/min"<<endl;break;
+                    case 8:cout<<quantity<<" km/h ===> "<<quantity*0.0002778<<" km/s"<<endl;break;
+                    case 9:cout<<quantity<<" km/h ===> "<<quantity*1000<<" m/h"<<endl;break;
+                    case 10:cout<<quantity<<" km/h ===> "<<quantity*1000/60<<" m/min"<<endl;break;
+                    case 11:cout<<quantity<<" km/h ===> "<<quantity*1000/3600<<" mps"<<endl;break;
+                    case 12:cout<<quantity<<" km/h ===> "<<quantity*0.6213<<" mph"<<endl;break;
+                    case 13:cout<<quantity<<" km/h ===> "<<quantity*0.6213/60<<" mi/min"<<endl;break;
+                    case 14:cout<<quantity<<" km/h ===> "<<quantity*0.6213/3600<<" mi/s"<<endl;break;
+                    case 15:cout<<quantity<<" km/h ===> "<<quantity*0.54<<" nmi/h"<<endl;break;
                     default:break;
                 }
             break;
         case 7:
             switch(to){
-                    case 1:cout<<quantity<<" km/min ===> "<<quantity<<" cm/min"<<endl;break;
-                    case 2:cout<<quantity<<" km/min ===> "<<quantity<<" cm/s"<<endl;break;
-                    case 3:cout<<quantity<<" km/min ===> "<<quantity<<" fph"<<endl;break;
-                    case 4:cout<<quantity<<" km/min ===> "<<quantity<<" fps"<<endl;break;
-                    case 5:cout<<quantity<<" km/min ===> "<<quantity<<" ips"<<endl;break;
-                    case 6:cout<<quantity<<" km/min ===> "<<quantity<<" km/h"<<endl;break;
+                    case 1:cout<<quantity<<" km/min ===> "<<quantity*100000<<" cm/min"<<endl;break;
+                    case 2:cout<<quantity<<" km/min ===> "<<quantity*100000/60<<" cm/s"<<endl;break;
+                    case 3:cout<<quantity<<" km/min ===> "<<quantity*196849.62<<" fph"<<endl;break;
+                    case 4:cout<<quantity<<" km/min ===> "<<quantity*196849.62/3600<<" fps"<<endl;break;
+                    case 5:cout<<quantity<<" km/min ===> "<<quantity*656.168<<" ips"<<endl;break;
+                    case 6:cout<<quantity<<" km/min ===> "<<quantity*60<<" km/h"<<endl;break;
                     case 7:cout<<quantity<<" km/min ===> "<<quantity<<" km/min"<<endl;break;
-                    case 8:cout<<quantity<<" km/min ===> "<<quantity<<" km/s"<<endl;break;
-                    case 9:cout<<quantity<<" km/min ===> "<<quantity<<" m/h"<<endl;break;
-                    case 10:cout<<quantity<<" km/min ===> "<<quantity<<" m/min"<<endl;break;
-                    case 11:cout<<quantity<<" km/min ===> "<<quantity<<" mps"<<endl;break;
-                    case 12:cout<<quantity<<" km/min ===> "<<quantity<<" mph"<<endl;break;
-                    case 13:cout<<quantity<<" km/min ===> "<<quantity<<" mi/min"<<endl;break;
-                    case 14:cout<<quantity<<" km/min ===> "<<quantity<<" mi/s"<<endl;break;
-                    case 15:cout<<quantity<<" km/min ===> "<<quantity<<" nmi/h"<<endl;break;
+                    case 8:cout<<quantity<<" km/min ===> "<<quantity/60<<" km/s"<<endl;break;
+                    case 9:cout<<quantity<<" km/min ===> "<<quantity*1000*60<<" m/h"<<endl;break;
+                    case 10:cout<<quantity<<" km/min ===> "<<quantity*1000<<" m/min"<<endl;break;
+                    case 11:cout<<quantity<<" km/min ===> "<<quantity*1000/60<<" mps"<<endl;break;
+                    case 12:cout<<quantity<<" km/min ===> "<<quantity*37.282<<" mph"<<endl;break;
+                    case 13:cout<<quantity<<" km/min ===> "<<quantity*0.6123<<" mi/min"<<endl;break;
+                    case 14:cout<<quantity<<" km/min ===> "<<quantity*0.6123/60<<" mi/s"<<endl;break;
+                    case 15:cout<<quantity<<" km/min ===> "<<quantity*32.4<<" nmi/h"<<endl;break;
                     default:break;
                 }
             break;
         case 8:
             switch(to){
-                    case 1:cout<<quantity<<" km/s ===> "<<quantity<<" cm/min"<<endl;break;
-                    case 2:cout<<quantity<<" km/s ===> "<<quantity<<" cm/s"<<endl;break;
-                    case 3:cout<<quantity<<" km/s ===> "<<quantity<<" fph"<<endl;break;
-                    case 4:cout<<quantity<<" km/s ===> "<<quantity<<" fps"<<endl;break;
-                    case 5:cout<<quantity<<" km/s ===> "<<quantity<<" ips"<<endl;break;
-                    case 6:cout<<quantity<<" km/s ===> "<<quantity<<" km/min"<<endl;break;
-                    case 7:cout<<quantity<<" km/s ===> "<<quantity<<" km/min"<<endl;break;
+                    case 1:cout<<quantity<<" km/s ===> "<<quantity*100000*60<<" cm/min"<<endl;break;
+                    case 2:cout<<quantity<<" km/s ===> "<<quantity*100000<<" cm/s"<<endl;break;
+                    case 3:cout<<quantity<<" km/s ===> "<<quantity*11810977.1221<<" fph"<<endl;break;
+                    case 4:cout<<quantity<<" km/s ===> "<<quantity*3280.8399<<" fps"<<endl;break;
+                    case 5:cout<<quantity<<" km/s ===> "<<quantity*39370.0787<<" ips"<<endl;break;
+                    case 6:cout<<quantity<<" km/s ===> "<<quantity*3600<<" km/h"<<endl;break;
+                    case 7:cout<<quantity<<" km/s ===> "<<quantity*60<<" km/min"<<endl;break;
                     case 8:cout<<quantity<<" km/s ===> "<<quantity<<" km/s"<<endl;break;
-                    case 9:cout<<quantity<<" km/s ===> "<<quantity<<" m/h"<<endl;break;
-                    case 10:cout<<quantity<<" km/s ===> "<<quantity<<" m/min"<<endl;break;
-                    case 11:cout<<quantity<<" km/s ===> "<<quantity<<" mps"<<endl;break;
-                    case 12:cout<<quantity<<" km/s ===> "<<quantity<<" mph"<<endl;break;
-                    case 13:cout<<quantity<<" km/s ===> "<<quantity<<" mi/min"<<endl;break;
-                    case 14:cout<<quantity<<" km/s ===> "<<quantity<<" mi/s"<<endl;break;
-                    case 15:cout<<quantity<<" km/s ===> "<<quantity<<" nmi/h"<<endl;break;
+                    case 9:cout<<quantity<<" km/s ===> "<<quantity*1000*3600<<" m/h"<<endl;break;
+                    case 10:cout<<quantity<<" km/s ===> "<<quantity*1000*60<<" m/min"<<endl;break;
+                    case 11:cout<<quantity<<" km/s ===> "<<quantity*1000<<" mps"<<endl;break;
+                    case 12:cout<<quantity<<" km/s ===> "<<quantity*2236.9362<<" mph"<<endl;break;
+                    case 13:cout<<quantity<<" km/s ===> "<<quantity*37.2822<<" mi/min"<<endl;break;
+                    case 14:cout<<quantity<<" km/s ===> "<<quantity*0.6123<<" mi/s"<<endl;break;
+                    case 15:cout<<quantity<<" km/s ===> "<<quantity*1944.0124<<" nmi/h"<<endl;break;
                     default:break;
                 }
             break;
         case 9:
             switch(to){
-                    case 1:cout<<quantity<<" m/h ===> "<<quantity<<" cm/min"<<endl;break;
-                    case 2:cout<<quantity<<" m/h ===> "<<quantity<<" cm/s"<<endl;break;
-                    case 3:cout<<quantity<<" m/h ===> "<<quantity<<" fph"<<endl;break;
-                    case 4:cout<<quantity<<" m/h ===> "<<quantity<<" fps"<<endl;break;
-                    case 5:cout<<quantity<<" m/h ===> "<<quantity<<" ips"<<endl;break;
-                    case 6:cout<<quantity<<" m/h ===> "<<quantity<<" km/h"<<endl;break;
-                    case 7:cout<<quantity<<" m/h ===> "<<quantity<<" km/min"<<endl;break;
-                    case 8:cout<<quantity<<" m/h ===> "<<quantity<<" km/s"<<endl;break;
+                    case 1:cout<<quantity<<" m/h ===> "<<quantity*100/60<<" cm/min"<<endl;break;
+                    case 2:cout<<quantity<<" m/h ===> "<<quantity*100/3600<<" cm/s"<<endl;break;
+                    case 3:cout<<quantity<<" m/h ===> "<<quantity*3.280829<<" fph"<<endl;break;
+                    case 4:cout<<quantity<<" m/h ===> "<<quantity*3.280829/3600<<" fps"<<endl;break;
+                    case 5:cout<<quantity<<" m/h ===> "<<quantity*0.010936<<" ips"<<endl;break;
+                    case 6:cout<<quantity<<" m/h ===> "<<quantity/1000<<" km/h"<<endl;break;
+                    case 7:cout<<quantity<<" m/h ===> "<<quantity/1000/60<<" km/min"<<endl;break;
+                    case 8:cout<<quantity<<" m/h ===> "<<quantity/1000/3600<<" km/s"<<endl;break;
                     case 9:cout<<quantity<<" m/h ===> "<<quantity<<" m/h"<<endl;break;
-                    case 10:cout<<quantity<<" m/h ===> "<<quantity<<" m/min"<<endl;break;
-                    case 11:cout<<quantity<<" m/h ===> "<<quantity<<" mps"<<endl;break;
-                    case 12:cout<<quantity<<" m/h ===> "<<quantity<<" mph"<<endl;break;
-                    case 13:cout<<quantity<<" m/h ===> "<<quantity<<" mi/min"<<endl;break;
-                    case 14:cout<<quantity<<" m/h ===> "<<quantity<<" mi/s"<<endl;break;
-                    case 15:cout<<quantity<<" m/h ===> "<<quantity<<" nmi/h"<<endl;break;
+                    case 10:cout<<quantity<<" m/h ===> "<<quantity/60<<" m/min"<<endl;break;
+                    case 11:cout<<quantity<<" m/h ===> "<<quantity/3600<<" mps"<<endl;break;
+                    case 12:cout<<quantity<<" m/h ===> "<<quantity*0.0006123<<" mph"<<endl;break;
+                    case 13:cout<<quantity<<" m/h ===> "<<quantity*0.0006123/60<<" mi/min"<<endl;break;
+                    case 14:cout<<quantity<<" m/h ===> "<<quantity*0.0001726<<" mi/s"<<endl;break;
+                    case 15:cout<<quantity<<" m/h ===> "<<quantity*0.00054<<" nmi/h"<<endl;break;
                     default:break;
                 }
             break;
         case 10:
             switch(to){
-                    case 1:cout<<quantity<<" m/min ===> "<<quantity<<" cm/min"<<endl;break;
-                    case 2:cout<<quantity<<" m/min ===> "<<quantity<<" cm/s"<<endl;break;
-                    case 3:cout<<quantity<<" m/min ===> "<<quantity<<" fph"<<endl;break;
-                    case 4:cout<<quantity<<" m/min ===> "<<quantity<<" fps"<<endl;break;
-                    case 5:cout<<quantity<<" m/min ===> "<<quantity<<" ips"<<endl;break;
-                    case 6:cout<<quantity<<" m/min ===> "<<quantity<<" km/h"<<endl;break;
-                    case 7:cout<<quantity<<" m/min ===> "<<quantity<<" km/min"<<endl;break;
-                    case 8:cout<<quantity<<" m/min ===> "<<quantity<<" km/s"<<endl;break;
-                    case 9:cout<<quantity<<" m/min ===> "<<quantity<<" m/h"<<endl;break;
+                    case 1:cout<<quantity<<" m/min ===> "<<quantity*100<<" cm/min"<<endl;break;
+                    case 2:cout<<quantity<<" m/min ===> "<<quantity*100/60<<" cm/s"<<endl;break;
+                    case 3:cout<<quantity<<" m/min ===> "<<quantity*196.8496<<" fph"<<endl;break;
+                    case 4:cout<<quantity<<" m/min ===> "<<quantity*0.05468<<" fps"<<endl;break;
+                    case 5:cout<<quantity<<" m/min ===> "<<quantity*0.6561<<" ips"<<endl;break;
+                    case 6:cout<<quantity<<" m/min ===> "<<quantity/1000*60<<" km/h"<<endl;break;
+                    case 7:cout<<quantity<<" m/min ===> "<<quantity/1000<<" km/min"<<endl;break;
+                    case 8:cout<<quantity<<" m/min ===> "<<quantity/1000/60<<" km/s"<<endl;break;
+                    case 9:cout<<quantity<<" m/min ===> "<<quantity*60<<" m/h"<<endl;break;
                     case 10:cout<<quantity<<" m/min ===> "<<quantity<<" m/min"<<endl;break;
-                    case 11:cout<<quantity<<" m/min ===> "<<quantity<<" mps"<<endl;break;
-                    case 12:cout<<quantity<<" m/min ===> "<<quantity<<" mph"<<endl;break;
-                    case 13:cout<<quantity<<" m/min ===> "<<quantity<<" mi/min"<<endl;break;
-                    case 14:cout<<quantity<<" m/min ===> "<<quantity<<" mi/s"<<endl;break;
-                    case 15:cout<<quantity<<" m/min ===> "<<quantity<<" nmi/h"<<endl;break;
+                    case 11:cout<<quantity<<" m/min ===> "<<quantity/60<<" mps"<<endl;break;
+                    case 12:cout<<quantity<<" m/min ===> "<<quantity*0.3728<<" mph"<<endl;break;
+                    case 13:cout<<quantity<<" m/min ===> "<<quantity*0.0006213<<" mi/min"<<endl;break;
+                    case 14:cout<<quantity<<" m/min ===> "<<quantity*0.0006213/60<<" mi/s"<<endl;break;
+                    case 15:cout<<quantity<<" m/min ===> "<<quantity*0.3240<<" nmi/h"<<endl;break;
                     default:break;
                 }
             break;
         case 11:
             switch(to){
-                    case 1:cout<<quantity<<" mps ===> "<<quantity<<" cm/min"<<endl;break;
-                    case 2:cout<<quantity<<" mps ===> "<<quantity<<" cm/s"<<endl;break;
-                    case 3:cout<<quantity<<" mps ===> "<<quantity<<" fph"<<endl;break;
-                    case 4:cout<<quantity<<" mps ===> "<<quantity<<" fps"<<endl;break;
-                    case 5:cout<<quantity<<" mps ===> "<<quantity<<" ips"<<endl;break;
-                    case 6:cout<<quantity<<" mps ===> "<<quantity<<" km/h"<<endl;break;
-                    case 7:cout<<quantity<<" mps ===> "<<quantity<<" km/min"<<endl;break;
-                    case 8:cout<<quantity<<" mps ===> "<<quantity<<" km/s"<<endl;break;
-                    case 9:cout<<quantity<<" mps ===> "<<quantity<<" m/h"<<endl;break;
-                    case 10:cout<<quantity<<" mps ===> "<<quantity<<" m/min"<<endl;break;
+                    case 1:cout<<quantity<<" mps ===> "<<quantity*100*60<<" cm/min"<<endl;break;
+                    case 2:cout<<quantity<<" mps ===> "<<quantity*100<<" cm/s"<<endl;break;
+                    case 3:cout<<quantity<<" mps ===> "<<quantity*11810.977<<" fph"<<endl;break;
+                    case 4:cout<<quantity<<" mps ===> "<<quantity*3.28084<<" fps"<<endl;break;
+                    case 5:cout<<quantity<<" mps ===> "<<quantity*39.37<<" ips"<<endl;break;
+                    case 6:cout<<quantity<<" mps ===> "<<quantity/1000*3600<<" km/h"<<endl;break;
+                    case 7:cout<<quantity<<" mps ===> "<<quantity/1000*60<<" km/min"<<endl;break;
+                    case 8:cout<<quantity<<" mps ===> "<<quantity/1000<<" km/s"<<endl;break;
+                    case 9:cout<<quantity<<" mps ===> "<<quantity*3600<<" m/h"<<endl;break;
+                    case 10:cout<<quantity<<" mps ===> "<<quantity*60<<" m/min"<<endl;break;
                     case 11:cout<<quantity<<" mps ===> "<<quantity<<" mps"<<endl;break;
-                    case 12:cout<<quantity<<" mps ===> "<<quantity<<" mph"<<endl;break;
-                    case 13:cout<<quantity<<" mps ===> "<<quantity<<" mi/min"<<endl;break;
-                    case 14:cout<<quantity<<" mps ===> "<<quantity<<" mi/s"<<endl;break;
-                    case 15:cout<<quantity<<" mps ===> "<<quantity<<" nmi/h"<<endl;break;
+                    case 12:cout<<quantity<<" mps ===> "<<quantity*2.23693<<" mph"<<endl;break;
+                    case 13:cout<<quantity<<" mps ===> "<<quantity*0.03728<<" mi/min"<<endl;break;
+                    case 14:cout<<quantity<<" mps ===> "<<quantity*0.0006213<<" mi/s"<<endl;break;
+                    case 15:cout<<quantity<<" mps ===> "<<quantity*1.944012<<" nmi/h"<<endl;break;
                 }
             break;
         case 12:
             switch(to){
-                    case 1:cout<<quantity<<" mph ===> "<<quantity<<" cm/min"<<endl;break;
-                    case 2:cout<<quantity<<" mph ===> "<<quantity<<" cm/s"<<endl;break;
-                    case 3:cout<<quantity<<" mph ===> "<<quantity<<" fph"<<endl;break;
-                    case 4:cout<<quantity<<" mph ===> "<<quantity<<" fps"<<endl;break;
-                    case 5:cout<<quantity<<" mph ===> "<<quantity<<" ips"<<endl;break;
-                    case 6:cout<<quantity<<" mph ===> "<<quantity<<" km/h"<<endl;break;
-                    case 7:cout<<quantity<<" mph ===> "<<quantity<<" km/min"<<endl;break;
-                    case 8:cout<<quantity<<" mph ===> "<<quantity<<" km/s"<<endl;break;
-                    case 9:cout<<quantity<<" mph ===> "<<quantity<<" m/h"<<endl;break;
-                    case 10:cout<<quantity<<" mph ===> "<<quantity<<" m/min"<<endl;break;
-                    case 11:cout<<quantity<<" mph ===> "<<quantity<<" mps"<<endl;break;
+                    case 1:cout<<quantity<<" mph ===> "<<quantity*2682.2394<<" cm/min"<<endl;break;
+                    case 2:cout<<quantity<<" mph ===> "<<quantity*44.704<<" cm/s"<<endl;break;
+                    case 3:cout<<quantity<<" mph ===> "<<quantity*5279.9792<<" fph"<<endl;break;
+                    case 4:cout<<quantity<<" mph ===> "<<quantity*5279.9792/3600<<" fps"<<endl;break;
+                    case 5:cout<<quantity<<" mph ===> "<<quantity*17.6<<" ips"<<endl;break;
+                    case 6:cout<<quantity<<" mph ===> "<<quantity*1.61<<" km/h"<<endl;break;
+                    case 7:cout<<quantity<<" mph ===> "<<quantity*1.61/60<<" km/min"<<endl;break;
+                    case 8:cout<<quantity<<" mph ===> "<<quantity*1.61/3600<<" km/s"<<endl;break;
+                    case 9:cout<<quantity<<" mph ===> "<<quantity*1609.3427<<" m/h"<<endl;break;
+                    case 10:cout<<quantity<<" mph ===> "<<quantity*1609.3427/60<<" m/min"<<endl;break;
+                    case 11:cout<<quantity<<" mph ===> "<<quantity*1609.3427/3600<<" mps"<<endl;break;
                     case 12:cout<<quantity<<" mph ===> "<<quantity<<" mph"<<endl;break;
-                    case 13:cout<<quantity<<" mph ===> "<<quantity<<" mi/min"<<endl;break;
-                    case 14:cout<<quantity<<" mph ===> "<<quantity<<" mi/s"<<endl;break;
-                    case 15:cout<<quantity<<" mph ===> "<<quantity<<" nmi/h"<<endl;break;
+                    case 13:cout<<quantity<<" mph ===> "<<quantity/60<<" mi/min"<<endl;break;
+                    case 14:cout<<quantity<<" mph ===> "<<quantity/3600<<" mi/s"<<endl;break;
+                    case 15:cout<<quantity<<" mph ===> "<<quantity*0.8690<<" nmi/h"<<endl;break;
                     default:break;
                 }
             break;
         case 13:
             switch(to){
-                    case 1:cout<<quantity<<" mi/min ===> "<<quantity<<" cm/min"<<endl;break;
-                    case 2:cout<<quantity<<" mi/min ===> "<<quantity<<" cm/s"<<endl;break;
-                    case 3:cout<<quantity<<" mi/min ===> "<<quantity<<" fph"<<endl;break;
-                    case 4:cout<<quantity<<" mi/min ===> "<<quantity<<" fps"<<endl;break;
-                    case 5:cout<<quantity<<" mi/min ===> "<<quantity<<" ips"<<endl;break;
-                    case 6:cout<<quantity<<" mi/min ===> "<<quantity<<" km/h"<<endl;break;
-                    case 7:cout<<quantity<<" mi/min ===> "<<quantity<<" km/min"<<endl;break;
-                    case 8:cout<<quantity<<" mi/min ===> "<<quantity<<" km/s"<<endl;break;
-                    case 9:cout<<quantity<<" mi/min ===> "<<quantity<<" m/h"<<endl;break;
-                    case 10:cout<<quantity<<" mi/min ===> "<<quantity<<" m/min"<<endl;break;
-                    case 11:cout<<quantity<<" mi/min ===> "<<quantity<<" mps"<<endl;break;
-                    case 12:cout<<quantity<<" mi/min ===> "<<quantity<<" mph"<<endl;break;
+                    case 1:cout<<quantity<<" mi/min ===> "<<quantity*160934.3678<<" cm/min"<<endl;break;
+                    case 2:cout<<quantity<<" mi/min ===> "<<quantity*160934.3678/60<<" cm/s"<<endl;break;
+                    case 3:cout<<quantity<<" mi/min ===> "<<quantity*316798.7527<<" fph"<<endl;break;
+                    case 4:cout<<quantity<<" mi/min ===> "<<quantity*87.99<<" fps"<<endl;break;
+                    case 5:cout<<quantity<<" mi/min ===> "<<quantity*1056<<" ips"<<endl;break;
+                    case 6:cout<<quantity<<" mi/min ===> "<<quantity*96.560<<" km/h"<<endl;break;
+                    case 7:cout<<quantity<<" mi/min ===> "<<quantity*96.560/60<<" km/min"<<endl;break;
+                    case 8:cout<<quantity<<" mi/min ===> "<<quantity*96.560/3600<<" km/s"<<endl;break;
+                    case 9:cout<<quantity<<" mi/min ===> "<<quantity*96560.5627<<" m/h"<<endl;break;
+                    case 10:cout<<quantity<<" mi/min ===> "<<quantity*96560.5627/60<<" m/min"<<endl;break;
+                    case 11:cout<<quantity<<" mi/min ===> "<<quantity*96560.5627/3600<<" mps"<<endl;break;
+                    case 12:cout<<quantity<<" mi/min ===> "<<quantity*60<<" mph"<<endl;break;
                     case 13:cout<<quantity<<" mi/min ===> "<<quantity<<" mi/min"<<endl;break;
-                    case 14:cout<<quantity<<" mi/min ===> "<<quantity<<" mi/s"<<endl;break;
-                    case 15:cout<<quantity<<" mi/min ===> "<<quantity<<" nmi/h"<<endl;break;
+                    case 14:cout<<quantity<<" mi/min ===> "<<quantity/60<<" mi/s"<<endl;break;
+                    case 15:cout<<quantity<<" mi/min ===> "<<quantity*52.1430<<" nmi/h"<<endl;break;
                     default:break;
                 }
             break;
         case 14:
             switch(to){
-                    case 1:cout<<quantity<<" mi/s ===> "<<quantity<<" cm/min"<<endl;break;
-                    case 2:cout<<quantity<<" mi/s ===> "<<quantity<<" cm/s"<<endl;break;
-                    case 3:cout<<quantity<<" mi/s ===> "<<quantity<<" fph"<<endl;break;
-                    case 4:cout<<quantity<<" mi/s ===> "<<quantity<<" fps"<<endl;break;
-                    case 5:cout<<quantity<<" mi/s ===> "<<quantity<<" ips"<<endl;break;
-                    case 6:cout<<quantity<<" mi/s ===> "<<quantity<<" km/h"<<endl;break;
-                    case 7:cout<<quantity<<" mi/s ===> "<<quantity<<" km/min"<<endl;break;
-                    case 8:cout<<quantity<<" mi/s ===> "<<quantity<<" km/s"<<endl;break;
-                    case 9:cout<<quantity<<" mi/s ===> "<<quantity<<" m/h"<<endl;break;
-                    case 10:cout<<quantity<<" mi/s ===> "<<quantity<<" m/min"<<endl;break;
-                    case 11:cout<<quantity<<" mi/s ===> "<<quantity<<" mps"<<endl;break;
-                    case 12:cout<<quantity<<" mi/s ===> "<<quantity<<" mph"<<endl;break;
-                    case 13:cout<<quantity<<" mi/s ===> "<<quantity<<" mi/min"<<endl;break;
+                    case 1:cout<<quantity<<" mi/s ===> "<<quantity*160934.4*60<<" cm/min"<<endl;break;
+                    case 2:cout<<quantity<<" mi/s ===> "<<quantity*160934.4<<" cm/s"<<endl;break;
+                    case 3:cout<<quantity<<" mi/s ===> "<<quantity*19007925.165<<" fph"<<endl;break;
+                    case 4:cout<<quantity<<" mi/s ===> "<<quantity*5280<<" fps"<<endl;break;
+                    case 5:cout<<quantity<<" mi/s ===> "<<quantity*63360<<" ips"<<endl;break;
+                    case 6:cout<<quantity<<" mi/s ===> "<<quantity*5793.6383<<" km/h"<<endl;break;
+                    case 7:cout<<quantity<<" mi/s ===> "<<quantity*5793.6383/60<<" km/min"<<endl;break;
+                    case 8:cout<<quantity<<" mi/s ===> "<<quantity*5793.6383/3600<<" km/s"<<endl;break;
+                    case 9:cout<<quantity<<" mi/s ===> "<<quantity*5793.6383*1000<<" m/h"<<endl;break;
+                    case 10:cout<<quantity<<" mi/s ===> "<<quantity*5793.6383*1000/60<<" m/min"<<endl;break;
+                    case 11:cout<<quantity<<" mi/s ===> "<<quantity*5793.6383*1000/3600<<" mps"<<endl;break;
+                    case 12:cout<<quantity<<" mi/s ===> "<<quantity*3600<<" mph"<<endl;break;
+                    case 13:cout<<quantity<<" mi/s ===> "<<quantity*60<<" mi/min"<<endl;break;
                     case 14:cout<<quantity<<" mi/s ===> "<<quantity<<" mi/s"<<endl;break;
-                    case 15:cout<<quantity<<" mi/s ===> "<<quantity<<" nmi/h"<<endl;break;
+                    case 15:cout<<quantity<<" mi/s ===> "<<quantity*3128.584<<" nmi/h"<<endl;break;
                     default:break;
                 }
             break;
         case 15:
             switch(to){
-                    case 1:cout<<quantity<<" nmi/h ===> "<<quantity<<" cm/min"<<endl;break;
-                    case 2:cout<<quantity<<" nmi/h ===> "<<quantity<<" cm/s"<<endl;break;
-                    case 3:cout<<quantity<<" nmi/h ===> "<<quantity<<" fph"<<endl;break;
-                    case 4:cout<<quantity<<" nmi/h ===> "<<quantity<<" fps"<<endl;break;
-                    case 5:cout<<quantity<<" nmi/h ===> "<<quantity<<" ips"<<endl;break;
-                    case 6:cout<<quantity<<" nmi/h ===> "<<quantity<<" km/h"<<endl;break;
-                    case 7:cout<<quantity<<" nmi/h ===> "<<quantity<<" km/min"<<endl;break;
-                    case 8:cout<<quantity<<" nmi/h ===> "<<quantity<<" km/s"<<endl;break;
-                    case 9:cout<<quantity<<" nmi/h ===> "<<quantity<<" m/h"<<endl;break;
-                    case 10:cout<<quantity<<" nmi/h ===> "<<quantity<<" m/min"<<endl;break;
-                    case 11:cout<<quantity<<" nmi/h ===> "<<quantity<<" mps"<<endl;break;
-                    case 12:cout<<quantity<<" nmi/h ===> "<<quantity<<" mph"<<endl;break;
-                    case 13:cout<<quantity<<" nmi/h ===> "<<quantity<<" mi/min"<<endl;break;
-                    case 14:cout<<quantity<<" nmi/h ===> "<<quantity<<" mi/s"<<endl;break;
+                    case 1:cout<<quantity<<" nmi/h ===> "<<quantity*3086.3993<<" cm/min"<<endl;break;
+                    case 2:cout<<quantity<<" nmi/h ===> "<<quantity*51.44<<" cm/s"<<endl;break;
+                    case 3:cout<<quantity<<" nmi/h ===> "<<quantity*6075.566<<" fph"<<endl;break;
+                    case 4:cout<<quantity<<" nmi/h ===> "<<quantity*6075.566/3600<<" fps"<<endl;break;
+                    case 5:cout<<quantity<<" nmi/h ===> "<<quantity*20.2519<<" ips"<<endl;break;
+                    case 6:cout<<quantity<<" nmi/h ===> "<<quantity*1.8518<<" km/h"<<endl;break;
+                    case 7:cout<<quantity<<" nmi/h ===> "<<quantity*1.8518/60<<" km/min"<<endl;break;
+                    case 8:cout<<quantity<<" nmi/h ===> "<<quantity*1.8518/3600<<" km/s"<<endl;break;
+                    case 9:cout<<quantity<<" nmi/h ===> "<<quantity*1851.8385<<" m/h"<<endl;break;
+                    case 10:cout<<quantity<<" nmi/h ===> "<<quantity*1851.8385/60<<" m/min"<<endl;break;
+                    case 11:cout<<quantity<<" nmi/h ===> "<<quantity*1851.8385/3600<<" mps"<<endl;break;
+                    case 12:cout<<quantity<<" nmi/h ===> "<<quantity*1.1506<<" mph"<<endl;break;
+                    case 13:cout<<quantity<<" nmi/h ===> "<<quantity*1.1506/60<<" mi/min"<<endl;break;
+                    case 14:cout<<quantity<<" nmi/h ===> "<<quantity*1.1506/3600<<" mi/s"<<endl;break;
                     case 15:cout<<quantity<<" nmi/h ===> "<<quantity<<" nmi/h"<<endl;break;
                     default:break;
                 }
@@ -547,9 +703,189 @@ void convertesteEnergie(int from, int to,double quantity)
 {}
 void convertestePresiune(int from, int to,double quantity)
 {}
-void convertesteDensitate(int from, int to,double quantity)
-{}
 */
+void convertesteDensitate(int from, int to,double quantity)
+{
+    switch(from){
+        case 1:
+            switch(to){
+                case 1:cout<<quantity<<" g/cm"<<cube<<"===>"<<quantity<<" g/cm"<<cube<<endl;break;
+                case 2:cout<<quantity<<" g/cm"<<cube<<"===>"<<quantity*1000<<" g/l"<<endl;break;
+                case 3:cout<<quantity<<" g/cm"<<cube<<"===>"<<quantity*1000000<<" g/m"<<cube<<endl;break;
+                case 4:cout<<quantity<<" g/cm"<<cube<<"===>"<<quantity/1000<<" kg/cm"<<cube<<endl;break;
+                case 5:cout<<quantity<<" g/cm"<<cube<<"===>"<<quantity<<" kg/l"<<endl;break;
+                case 6:cout<<quantity<<" g/cm"<<cube<<"===>"<<quantity*1000<<" kg/m"<<cube<<endl;break;
+                case 7:cout<<quantity<<" g/cm"<<cube<<"===>"<<quantity<<" t/m"<<cube<<endl;break;
+                case 8:cout<<quantity<<" g/cm"<<cube<<"===>"<<quantity*62.43<<" lb/ft"<<cube<<endl;break;
+                case 9:cout<<quantity<<" g/cm"<<cube<<"===>"<<quantity*0.0361<<" lb/in"<<cube<<endl;break;
+                case 10:cout<<quantity<<" g/cm"<<cube<<"===>"<<quantity*8.3454<<" lb/gal(US)"<<endl;break;
+                case 11:cout<<quantity<<" g/cm"<<cube<<"===>"<<quantity*10.0224<<" lb/gal(UK)"<<endl;break;
+                default:break;
+            }
+            break;
+        case 2:
+            switch(to){
+                case 1:cout<<quantity<<" g/l===>"<<quantity/1000<<" g/cm"<<cube<<endl;break;
+                case 2:cout<<quantity<<" g/l===>"<<quantity<<" g/l"<<endl;break;
+                case 3:cout<<quantity<<" g/l===>"<<quantity*1000<<" g/m"<<cube<<endl;break;
+                case 4:cout<<quantity<<" g/l===>"<<quantity/1000000<<" kg/cm"<<cube<<endl;break;
+                case 5:cout<<quantity<<" g/l===>"<<quantity/1000<<" kg/l"<<endl;break;
+                case 6:cout<<quantity<<" g/l===>"<<quantity<<" kg/m"<<cube<<endl;break;
+                case 7:cout<<quantity<<" g/l===>"<<quantity/1000<<" t/m"<<cube<<endl;break;
+                case 8:cout<<quantity<<" g/l===>"<<quantity*0.06243<<" lb/ft"<<cube<<endl;break;
+                case 9:cout<<quantity<<" g/l===>"<<quantity*0.00003612<<" lb/in"<<cube<<endl;break;
+                case 10:cout<<quantity<<" g/l===>"<<quantity*0.008345<<" lb/gal(US)"<<endl;break;
+                case 11:cout<<quantity<<" g/l===>"<<quantity*0.0100224<<" lb/gal(UK)"<<endl;break;
+                default:break;
+            }
+            break;
+        case 3:
+            switch(to){
+                case 1:cout<<quantity<<" g/m"<<cube<<"===>"<<quantity/1000000<<" g/cm"<<cube<<endl;break;
+                case 2:cout<<quantity<<" g/m"<<cube<<"===>"<<quantity/1000<<" g/l"<<endl;break;
+                case 3:cout<<quantity<<" g/m"<<cube<<"===>"<<quantity<<" g/m"<<cube<<endl;break;
+                case 4:cout<<quantity<<" g/m"<<cube<<"===>"<<quantity/(1e-9)<<" kg/cm"<<cube<<endl;break;
+                case 5:cout<<quantity<<" g/m"<<cube<<"===>"<<quantity/1000000<<" kg/l"<<endl;break;
+                case 6:cout<<quantity<<" g/m"<<cube<<"===>"<<quantity/1000<<" kg/m"<<cube<<endl;break;
+                case 7:cout<<quantity<<" g/m"<<cube<<"===>"<<quantity/1000000<<" t/m"<<cube<<endl;break;
+                case 8:cout<<quantity<<" g/m"<<cube<<"===>"<<quantity*0.0000624<<" lb/ft"<<cube<<endl;break;
+                case 9:cout<<quantity<<" g/m"<<cube<<"===>"<<quantity*3.6127<<" lb/in"<<cube<<endl;break;
+                case 10:cout<<quantity<<" g/m"<<cube<<"===>"<<quantity*0.00000834<<" lb/gal(US)"<<endl;break;
+                case 11:cout<<quantity<<" g/m"<<cube<<"===>"<<quantity*0.0000100224<<" lb/gal(UK)"<<endl;break;
+                default:break;
+            }
+            break;
+        case 4:
+            switch(to){
+                case 1:cout<<quantity<<" kg/cm"<<cube<<"===>"<<quantity*1000<<" g/cm"<<cube<<endl;break;
+                case 2:cout<<quantity<<" kg/cm"<<cube<<"===>"<<quantity*1000000<<" g/l"<<endl;break;
+                case 3:cout<<quantity<<" kg/cm"<<cube<<"===>"<<quantity*1000000000<<" g/m"<<cube<<endl;break;
+                case 4:cout<<quantity<<" kg/cm"<<cube<<"===>"<<quantity<<" kg/cm"<<cube<<endl;break;
+                case 5:cout<<quantity<<" kg/cm"<<cube<<"===>"<<quantity*1000<<" kg/l"<<endl;break;
+                case 6:cout<<quantity<<" kg/cm"<<cube<<"===>"<<quantity*1000000<<" kg/m"<<cube<<endl;break;
+                case 7:cout<<quantity<<" kg/cm"<<cube<<"===>"<<quantity*1000<<" t/m"<<cube<<endl;break;
+                case 8:cout<<quantity<<" kg/cm"<<cube<<"===>"<<quantity*62430<<" lb/ft"<<cube<<endl;break;
+                case 9:cout<<quantity<<" kg/cm"<<cube<<"===>"<<quantity*36.127<<" lb/in"<<cube<<endl;break;
+                case 10:cout<<quantity<<" kg/cm"<<cube<<"===>"<<quantity*8345.4044<<" lb/gal(US)"<<endl;break;
+                case 11:cout<<quantity<<" kg/cm"<<cube<<"===>"<<quantity*10022.4128<<" lb/gal(UK)"<<endl;break;
+                default:break;
+            }
+            break;
+        case 5:
+            switch(to){
+                case 1:cout<<quantity<<" kg/l===>"<<quantity<<" g/cm"<<cube<<endl;break;
+                case 2:cout<<quantity<<" kg/l===>"<<quantity*1000<<" g/l"<<endl;break;
+                case 3:cout<<quantity<<" kg/l===>"<<quantity*1000000<<" g/m"<<cube<<endl;break;
+                case 4:cout<<quantity<<" kg/l===>"<<quantity/1000<<" kg/cm"<<cube<<endl;break;
+                case 5:cout<<quantity<<" kg/l===>"<<quantity<<" kg/l"<<endl;break;
+                case 6:cout<<quantity<<" kg/l===>"<<quantity*1000<<" kg/m"<<cube<<endl;break;
+                case 7:cout<<quantity<<" kg/l===>"<<quantity<<" t/m"<<cube<<endl;break;
+                case 8:cout<<quantity<<" kg/l===>"<<quantity*62.43<<" lb/ft"<<cube<<endl;break;
+                case 9:cout<<quantity<<" kg/l===>"<<quantity*0.03612<<" lb/in"<<cube<<endl;break;
+                case 10:cout<<quantity<<" kg/l===>"<<quantity*8.3454<<" lb/gal(US)"<<endl;break;
+                case 11:cout<<quantity<<" kg/l===>"<<quantity*10.0224<<" lb/gal(UK)"<<endl;break;
+                default:break;
+            }
+            break;
+        case 6:
+            switch(to){
+                case 1:cout<<quantity<<" kg/m"<<cube<<"===>"<<quantity/1000<<" g/cm"<<cube<<endl;break;
+                case 2:cout<<quantity<<" kg/m"<<cube<<"===>"<<quantity<<" g/l"<<endl;break;
+                case 3:cout<<quantity<<" kg/m"<<cube<<"===>"<<quantity*1000<<" g/m"<<cube<<endl;break;
+                case 4:cout<<quantity<<" kg/m"<<cube<<"===>"<<quantity/1000000<<" kg/cm"<<cube<<endl;break;
+                case 5:cout<<quantity<<" kg/m"<<cube<<"===>"<<quantity/1000<<" kg/l"<<endl;break;
+                case 6:cout<<quantity<<" kg/m"<<cube<<"===>"<<quantity<<" kg/m"<<cube<<endl;break;
+                case 7:cout<<quantity<<" kg/m"<<cube<<"===>"<<quantity/1000<<" t/m"<<cube<<endl;break;
+                case 8:cout<<quantity<<" kg/m"<<cube<<"===>"<<quantity*0.06243<<" lb/ft"<<cube<<endl;break;
+                case 9:cout<<quantity<<" kg/m"<<cube<<"===>"<<quantity*0.00003612<<" lb/in"<<cube<<endl;break;
+                case 10:cout<<quantity<<" kg/m"<<cube<<"===>"<<quantity*0.008345<<" lb/gal(US)"<<endl;break;
+                case 11:cout<<quantity<<" kg/m"<<cube<<"===>"<<quantity*0.0100224<<" lb/gal(UK)"<<endl;break;
+                default:break;
+            }
+            break;
+        case 7:
+            switch(to){
+                case 1:cout<<quantity<<" t/m"<<cube<<"===>"<<quantity<<" g/cm"<<cube<<endl;break;
+                case 2:cout<<quantity<<" t/m"<<cube<<"===>"<<quantity*1000<<" g/l"<<endl;break;
+                case 3:cout<<quantity<<" t/m"<<cube<<"===>"<<quantity*1000000<<" g/m"<<cube<<endl;break;
+                case 4:cout<<quantity<<" t/m"<<cube<<"===>"<<quantity/1000<<" kg/cm"<<cube<<endl;break;
+                case 5:cout<<quantity<<" t/m"<<cube<<"===>"<<quantity<<" kg/l"<<endl;break;
+                case 6:cout<<quantity<<" t/m"<<cube<<"===>"<<quantity*1000<<" kg/m"<<cube<<endl;break;
+                case 7:cout<<quantity<<" t/m"<<cube<<"===>"<<quantity<<" t/m"<<cube<<endl;break;
+                case 8:cout<<quantity<<" t/m"<<cube<<"===>"<<quantity*62.43<<" lb/ft"<<cube<<endl;break;
+                case 9:cout<<quantity<<" t/m"<<cube<<"===>"<<quantity*0.03612<<" lb/in"<<cube<<endl;break;
+                case 10:cout<<quantity<<" t/m"<<cube<<"===>"<<quantity*8.3454<<" lb/gal(US)"<<endl;break;
+                case 11:cout<<quantity<<" t/m"<<cube<<"===>"<<quantity*10.0224<<" lb/gal(UK)"<<endl;break;
+                default:break;
+            }
+            break;
+        case 8:
+            switch(to){
+                case 1:cout<<quantity<<" lb/ft"<<cube<<"===>"<<quantity*0.01601<<" g/cm"<<cube<<endl;break;
+                case 2:cout<<quantity<<" lb/ft"<<cube<<"===>"<<quantity*16.0179<<" g/l"<<endl;break;
+                case 3:cout<<quantity<<" lb/ft"<<cube<<"===>"<<quantity*16017.94<<" g/m"<<cube<<endl;break;
+                case 4:cout<<quantity<<" lb/ft"<<cube<<"===>"<<quantity*0.00001601<<" kg/cm"<<cube<<endl;break;
+                case 5:cout<<quantity<<" lb/ft"<<cube<<"===>"<<quantity*0.01601<<" kg/l"<<endl;break;
+                case 6:cout<<quantity<<" lb/ft"<<cube<<"===>"<<quantity*16.0179<<" kg/m"<<cube<<endl;break;
+                case 7:cout<<quantity<<" lb/ft"<<cube<<"===>"<<quantity*0.01601<<" t/m"<<cube<<endl;break;
+                case 8:cout<<quantity<<" lb/ft"<<cube<<"===>"<<quantity<<" lb/ft"<<cube<<endl;break;
+                case 9:cout<<quantity<<" lb/ft"<<cube<<"===>"<<quantity*0.0005786<<" lb/in"<<cube<<endl;break;
+                case 10:cout<<quantity<<" lb/ft"<<cube<<"===>"<<quantity*0.1336<<" lb/gal(US)"<<endl;break;
+                case 11:cout<<quantity<<" lb/ft"<<cube<<"===>"<<quantity*0.1605<<" lb/gal(UK)"<<endl;break;
+                default:break;
+            }
+            break;
+        case 9:
+            switch(to){
+                case 1:cout<<quantity<<" lb/in"<<cube<<"===>"<<quantity*27.679<<" g/cm"<<cube<<endl;break;
+                case 2:cout<<quantity<<" lb/in"<<cube<<"===>"<<quantity*27679.898<<" g/l"<<endl;break;
+                case 3:cout<<quantity<<" lb/in"<<cube<<"===>"<<quantity*27679898.58<<" g/m"<<cube<<endl;break;
+                case 4:cout<<quantity<<" lb/in"<<cube<<"===>"<<quantity*0.02767<<" kg/cm"<<cube<<endl;break;
+                case 5:cout<<quantity<<" lb/in"<<cube<<"===>"<<quantity*27.679<<" kg/l"<<endl;break;
+                case 6:cout<<quantity<<" lb/in"<<cube<<"===>"<<quantity*27679.898<<" kg/m"<<cube<<endl;break;
+                case 7:cout<<quantity<<" lb/in"<<cube<<"===>"<<quantity*27.679<<" t/m"<<cube<<endl;break;
+                case 8:cout<<quantity<<" lb/in"<<cube<<"===>"<<quantity*1728.056<<" lb/ft"<<cube<<endl;break;
+                case 9:cout<<quantity<<" lb/in"<<cube<<"===>"<<quantity<<" lb/in"<<cube<<endl;break;
+                case 10:cout<<quantity<<" lb/in"<<cube<<"===>"<<quantity*230.99<<" lb/gal(US)"<<endl;break;
+                case 11:cout<<quantity<<" lb/in"<<cube<<"===>"<<quantity*277.4193<<" lb/gal(UK)"<<endl;break;
+                default:break;
+            }
+            break;
+        case 10:
+            switch(to){
+                case 1:cout<<quantity<<" lb/gal(US)===>"<<quantity*0.1198<<" g/cm"<<cube<<endl;break;
+                case 2:cout<<quantity<<" lb/gal(US)===>"<<quantity*119.826<<" g/l"<<endl;break;
+                case 3:cout<<quantity<<" lb/gal(US)===>"<<quantity*119826.427<<" g/m"<<cube<<endl;break;
+                case 4:cout<<quantity<<" lb/gal(US)===>"<<quantity*0.0001198<<" kg/cm"<<cube<<endl;break;
+                case 5:cout<<quantity<<" lb/gal(US)===>"<<quantity*0.1198<<" kg/l"<<endl;break;
+                case 6:cout<<quantity<<" lb/gal(US)===>"<<quantity*119.826<<" kg/m"<<cube<<endl;break;
+                case 7:cout<<quantity<<" lb/gal(US)===>"<<quantity*0.1198<<" t/m"<<cube<<endl;break;
+                case 8:cout<<quantity<<" lb/gal(US)===>"<<quantity*7.480<<" lb/ft"<<cube<<endl;break;
+                case 9:cout<<quantity<<" lb/gal(US)===>"<<quantity*0.00432<<" lb/in"<<cube<<endl;break;
+                case 10:cout<<quantity<<" lb/gal(US)===>"<<quantity<<" lb/gal(US)"<<endl;break;
+                case 11:cout<<quantity<<" lb/gal(US)===>"<<quantity*1.20094<<" lb/gal(UK)"<<endl;break;
+                default:break;
+            }
+            break;
+        case 11:
+            switch(to){
+                case 1:cout<<quantity<<" lb/gal(UK)===>"<<quantity*0.09977<<" g/cm"<<cube<<endl;break;
+                case 2:cout<<quantity<<" lb/gal(UK)===>"<<quantity*99.7763<<" g/l"<<endl;break;
+                case 3:cout<<quantity<<" lb/gal(UK)===>"<<quantity*99776372<<" g/m"<<cube<<endl;break;
+                case 4:cout<<quantity<<" lb/gal(UK)===>"<<quantity*0.0000997<<" kg/cm"<<cube<<endl;break;
+                case 5:cout<<quantity<<" lb/gal(UK)===>"<<quantity*0.09977<<" kg/l"<<endl;break;
+                case 6:cout<<quantity<<" lb/gal(UK)===>"<<quantity*99.776<<" kg/m"<<cube<<endl;break;
+                case 7:cout<<quantity<<" lb/gal(UK)===>"<<quantity*0.09977<<" t/m"<<cube<<endl;break;
+                case 8:cout<<quantity<<" lb/gal(UK)===>"<<quantity*6.229<<" lb/ft"<<cube<<endl;break;
+                case 9:cout<<quantity<<" lb/gal(UK)===>"<<quantity*0.003604<<" lb/in"<<cube<<endl;break;
+                case 10:cout<<quantity<<" lb/gal(UK)===>"<<quantity*0.8326<<" lb/gal(US)"<<endl;break;
+                case 11:cout<<quantity<<" lb/gal(UK)===>"<<quantity<<" lb/gal(UK)"<<endl;break;
+                default:break;
+            }
+            break;
+        default:break;
+    }
+}
 void convertesteConsum(int from, int to,double quantity)
 {
     switch(from){
@@ -636,7 +972,7 @@ void choose_and_printArie()//10
             }
             cout<<"What quantity do you want to convert?"<<endl;
             cin>>Quant;
-    //convertesteArie(From,To,Quant);
+    convertesteArie(From,To,Quant);
 }
 void choose_and_printVolum()//12
 {
@@ -680,7 +1016,7 @@ void choose_and_printTimp()//6
             cout<<"What quantity do you want to convert?"<<endl;
             cin>>Quant;
 }
-void choose_and_printViteza()//15
+void choose_and_printViteza()//15 ok
 {
     int From,To,Quant;
     afisare_optiuniViteza();cout<<endl<<endl;
@@ -788,7 +1124,7 @@ void choose_and_printPresiune()//10
             cout<<"What quantity do you want to convert?"<<endl;
             cin>>Quant;
 }
-void choose_and_printDensitate()//11
+void choose_and_printDensitate()//11 ok
 {
     int From,To,Quant;
     afisare_optiuniDensitate();cout<<endl<<endl;
@@ -808,6 +1144,7 @@ void choose_and_printDensitate()//11
             }
             cout<<"What quantity do you want to convert?"<<endl;
             cin>>Quant;
+            convertesteDensitate(From,To,Quant);
 }
 void choose_and_printConsum()//4 ok
 {
@@ -835,7 +1172,7 @@ void choose_and_printConsum()//4 ok
 int main()
 {
 	int alegere,ok=1,from,to;
-    choose_and_printViteza();
+    choose_and_printArie();
 	cin.get(); cin.get();
 	return 0;
 }

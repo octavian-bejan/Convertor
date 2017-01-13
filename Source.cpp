@@ -28,8 +28,7 @@ void afisare_optiuni()
 	cout << "8. Energie." << endl;
 	cout << "9. Presiune." << endl;
 	cout << "10. Densitate." << endl;
-	cout << "11. Consum combustibil." << endl;
-	cout << "12. Exit" << endl;
+	cout << "11. Consum combustibil." << endl<<endl<<endl;;
 }
 void afisare_optiuniLungime()
 {
@@ -122,7 +121,7 @@ void afisare_optiuniMasa()
     cout<<"1. mg"<<endl;
     cout<<"2. g"<<endl;
     cout<<"3. kg"<<endl;
-    cout<<"4. Tone."<<endl;
+    cout<<"4. t"<<endl;
     cout<<"5. lb"<<endl;
     cout<<"6. oz(AV)"<<endl;
     cout<<"7. oz(Troy)"<<endl<<endl;
@@ -135,13 +134,12 @@ void afisare_optiuniEnergie()
     cout<<"2. kcal"<<endl;
     cout<<"3. J"<<endl;
     cout<<"4. KJ"<<endl;
-    cout<<"5. W"<<endl;
-    cout<<"6. W.s"<<endl;
-    cout<<"7. W.h"<<endl;
-    cout<<"8. Kw.h"<<endl;
+    cout<<"5. W.s"<<endl;
+    cout<<"6. W.h"<<endl;
+    cout<<"7. kW.h"<<endl;
     cout<<endl;
     cout<<"cal->Calorie    kcal->Kilocalorie    J->Jouli     KJ->KiloJouli"<<endl;
-    cout<<"W->Watt   W.s->Watt secunda   W.h->Watt ora    Kw.h->Kilowatt ora"<<endl;
+    cout<<"W.s->Watt secunda   W.h->Watt ora    kW.h->Kilowatt ora"<<endl;
 }
 void afisare_optiuniPresiune()
 {
@@ -152,9 +150,8 @@ void afisare_optiuniPresiune()
     cout<<"5. Pa"<<endl;
     cout<<"6. KPa"<<endl;
     cout<<"7. MPa"<<endl;
-    cout<<"8. N"<<endl;
-    cout<<"9. Torr"<<endl;
-    cout<<"10. Psi"<<endl;
+    cout<<"8. Torr"<<endl;
+    cout<<"9. Psi"<<endl;
     cout<<endl;
     cout<<"at->Atmosfera tehnica    atm->Atmosfera standard     bar->Bar    mbar->Milibar"<<endl;
     cout<<"KPa->Kilopascal   Pa->Pascal   MPa->Megapascal     N->Newton    Torr->Torr"<<endl;
@@ -186,12 +183,139 @@ void afisare_optiuniConsum()
     cout<<endl;
     cout<<"l->Litru     km->Kilometru     mi->Mila      gal->Galon"<<endl;
 }
-/*
+
 void convertesteLungime(int from,int to,double quantity)
 {
-    cout<<"DAdadasdasd"<<endl;
+    switch(from){
+    case 1:
+        switch(to){
+            case 1:cout<<quantity<<" mm===>"<<quantity<<" mm"<<endl;break;
+            case 2:cout<<quantity<<" mm===>"<<quantity/10<<" cm"<<endl;break;
+            case 3:cout<<quantity<<" mm===>"<<quantity/1000<<" m"<<endl;break;
+            case 4:cout<<quantity<<" mm===>"<<quantity/1000000<<" km"<<endl;break;
+            case 5:cout<<quantity<<" mm===>"<<quantity*0.03937<<" Inches"<<endl;break;
+            case 6:cout<<quantity<<" mm===>"<<quantity*0.003820<<" ft"<<endl;break;
+            case 7:cout<<quantity<<" mm===>"<<quantity*0.0010936<<" yz"<<endl;break;
+            case 8:cout<<quantity<<" mm===>"<<quantity*(6.2137e-7)<<" mi"<<endl;break;
+            case 9:cout<<quantity<<" mm===>"<<quantity*(5.3995e-7)<<" nmi"<<endl;break;
+            default:break;
+        }
+        break;
+        case 2:
+        switch(to){
+            case 1:cout<<quantity<<" cm===>"<<quantity*10<<" mm"<<endl;break;
+            case 2:cout<<quantity<<" cm===>"<<quantity<<" cm"<<endl;break;
+            case 3:cout<<quantity<<" cm===>"<<quantity/100<<" m"<<endl;break;
+            case 4:cout<<quantity<<" cm===>"<<quantity/100000<<" km"<<endl;break;
+            case 5:cout<<quantity<<" cm===>"<<quantity*0.3937<<" Inches"<<endl;break;
+            case 6:cout<<quantity<<" cm===>"<<quantity*0.0382<<" ft"<<endl;break;
+            case 7:cout<<quantity<<" cm===>"<<quantity*0.010936<<" yz"<<endl;break;
+            case 8:cout<<quantity<<" cm===>"<<quantity*0.0000062137<<" mi"<<endl;break;
+            case 9:cout<<quantity<<" cm===>"<<quantity*0.0000053995<<" nmi"<<endl;break;
+            default:break;
+        }
+        break;
+        case 3:
+        switch(to){
+            case 1:cout<<quantity<<" m===>"<<quantity*1000<<" mm"<<endl;break;
+            case 2:cout<<quantity<<" m===>"<<quantity*100<<" cm"<<endl;break;
+            case 3:cout<<quantity<<" m===>"<<quantity<<" m"<<endl;break;
+            case 4:cout<<quantity<<" m===>"<<quantity/1000<<" km"<<endl;break;
+            case 5:cout<<quantity<<" m===>"<<quantity*39.37<<" Inches"<<endl;break;
+            case 6:cout<<quantity<<" m===>"<<quantity*3.82<<" ft"<<endl;break;
+            case 7:cout<<quantity<<" m===>"<<quantity*1.0936<<" yz"<<endl;break;
+            case 8:cout<<quantity<<" m===>"<<quantity*0.0006213<<" mi"<<endl;break;
+            case 9:cout<<quantity<<" m===>"<<quantity*0.00053995<<" nmi"<<endl;break;
+            default:break;
+        }
+        break;
+        case 4:
+        switch(to){
+            case 1:cout<<quantity<<" km===>"<<quantity*1000000<<" mm"<<endl;break;
+            case 2:cout<<quantity<<" km===>"<<quantity*100000<<" cm"<<endl;break;
+            case 3:cout<<quantity<<" km===>"<<quantity*1000<<" m"<<endl;break;
+            case 4:cout<<quantity<<" km===>"<<quantity<<" km"<<endl;break;
+            case 5:cout<<quantity<<" km===>"<<quantity*39370.078<<" Inches"<<endl;break;
+            case 6:cout<<quantity<<" km===>"<<quantity*3280.8398<<" ft"<<endl;break;
+            case 7:cout<<quantity<<" km===>"<<quantity*1093.613<<" yz"<<endl;break;
+            case 8:cout<<quantity<<" km===>"<<quantity*0.6213<<" mi"<<endl;break;
+            case 9:cout<<quantity<<" km===>"<<quantity*0.53995<<" nmi"<<endl;break;
+            default:break;
+        }
+        break;
+        case 5:
+        switch(to){
+            case 1:cout<<quantity<<" Inches===>"<<quantity*25.4<<" mm"<<endl;break;
+            case 2:cout<<quantity<<" Inches===>"<<quantity*2.54<<" cm"<<endl;break;
+            case 3:cout<<quantity<<" Inches===>"<<quantity*0.0254<<" m"<<endl;break;
+            case 4:cout<<quantity<<" Inches===>"<<quantity*0.0000254<<" km"<<endl;break;
+            case 5:cout<<quantity<<" Inches===>"<<quantity<<" Inches"<<endl;break;
+            case 6:cout<<quantity<<" Inches===>"<<quantity*0.0833<<" ft"<<endl;break;
+            case 7:cout<<quantity<<" Inches===>"<<quantity*0.0277<<" yz"<<endl;break;
+            case 8:cout<<quantity<<" Inches===>"<<quantity*0.0000157<<" mi"<<endl;break;
+            case 9:cout<<quantity<<" Inches===>"<<quantity*0.0000137<<" nmi"<<endl;break;
+            default:break;
+        }
+        break;
+        case 6:
+        switch(to){
+            case 1:cout<<quantity<<" ft===>"<<quantity*30.48<<" mm"<<endl;break;
+            case 2:cout<<quantity<<" ft===>"<<quantity*3.048<<" cm"<<endl;break;
+            case 3:cout<<quantity<<" ft===>"<<quantity*0.03048<<" m"<<endl;break;
+            case 4:cout<<quantity<<" ft===>"<<quantity*0.00003048<<" km"<<endl;break;
+            case 5:cout<<quantity<<" ft===>"<<quantity*12<<" Inches"<<endl;break;
+            case 6:cout<<quantity<<" ft===>"<<quantity<<" ft"<<endl;break;
+            case 7:cout<<quantity<<" ft===>"<<quantity*0.33<<" yz"<<endl;break;
+            case 8:cout<<quantity<<" ft===>"<<quantity*0.000189<<" mi"<<endl;break;
+            case 9:cout<<quantity<<" ft===>"<<quantity*0.000164<<" nmi"<<endl;break;
+            default:break;
+        }
+        break;
+        case 7:
+        switch(to){
+            case 1:cout<<quantity<<" yz===>"<<quantity*914.4<<" mm"<<endl;break;
+            case 2:cout<<quantity<<" yz===>"<<quantity*91.44<<" cm"<<endl;break;
+            case 3:cout<<quantity<<" yz===>"<<quantity*0.9144<<" m"<<endl;break;
+            case 4:cout<<quantity<<" yz===>"<<quantity*0.0009144<<" km"<<endl;break;
+            case 5:cout<<quantity<<" yz===>"<<quantity*36<<" Inches"<<endl;break;
+            case 6:cout<<quantity<<" yz===>"<<quantity*3<<" ft"<<endl;break;
+            case 7:cout<<quantity<<" yz===>"<<quantity<<" yz"<<endl;break;
+            case 8:cout<<quantity<<" yz===>"<<quantity*0.000568<<" mi"<<endl;break;
+            case 9:cout<<quantity<<" yz===>"<<quantity*0.000493<<" nmi"<<endl;break;
+            default:break;
+        }
+        break;
+        case 8:
+        switch(to){
+            case 1:cout<<quantity<<" mi===>"<<quantity*1609344<<" mm"<<endl;break;
+            case 2:cout<<quantity<<" mi===>"<<quantity*160934.4<<" cm"<<endl;break;
+            case 3:cout<<quantity<<" mi===>"<<quantity*1609.344<<" m"<<endl;break;
+            case 4:cout<<quantity<<" mi===>"<<quantity*1.609344<<" km"<<endl;break;
+            case 5:cout<<quantity<<" mi===>"<<quantity*63360<<" Inches"<<endl;break;
+            case 6:cout<<quantity<<" mi===>"<<quantity*5280<<" ft"<<endl;break;
+            case 7:cout<<quantity<<" mi===>"<<quantity*1759.9995<<" yz"<<endl;break;
+            case 8:cout<<quantity<<" mi===>"<<quantity<<" mi"<<endl;break;
+            case 9:cout<<quantity<<" mi===>"<<quantity*0.8689<<" nmi"<<endl;break;
+            default:break;
+        }
+        break;
+        case 9:
+        switch(to){
+            case 1:cout<<quantity<<" nmi===>"<<quantity*1852000<<" mm"<<endl;break;
+            case 2:cout<<quantity<<" nmi===>"<<quantity*185200<<" cm"<<endl;break;
+            case 3:cout<<quantity<<" nmi===>"<<quantity*1850<<" m"<<endl;break;
+            case 4:cout<<quantity<<" nmi===>"<<quantity*1.85<<" km"<<endl;break;
+            case 5:cout<<quantity<<" nmi===>"<<quantity*72913.38<<" Inches"<<endl;break;
+            case 6:cout<<quantity<<" nmi===>"<<quantity*6076.115<<" ft"<<endl;break;
+            case 7:cout<<quantity<<" nmi===>"<<quantity*2025.371<<" yz"<<endl;break;
+            case 8:cout<<quantity<<" nmi===>"<<quantity*1.15<<" mi"<<endl;break;
+            case 9:cout<<quantity<<" nmi===>"<<quantity<<" nmi"<<endl;break;
+            default:break;
+        }
+        break;
+        default:break;
+    }
 }
-*/
 void convertesteArie(int from,int to,double quantity)
 {
     switch(from){
@@ -348,12 +472,290 @@ void convertesteArie(int from,int to,double quantity)
         default:break;
     }
 }
-/*
+
 void convertesteVolum(int from, int to,double quantity)
-{}
+{
+    switch(from){
+    case 1:
+        switch(to){
+            case 1:cout<<quantity<<" ml===>"<<quantity<<" ml"<<endl;break;
+            case 2:cout<<quantity<<" ml===>"<<quantity/10<<" cl"<<endl;break;
+            case 3:cout<<quantity<<" ml===>"<<quantity/100<<" dl"<<endl;break;
+            case 4:cout<<quantity<<" ml===>"<<quantity/1000<<" l"<<endl;break;
+            case 5:cout<<quantity<<" ml===>"<<quantity*0.0002199<<" Gal(UK)"<<endl;break;
+            case 6:cout<<quantity<<" ml===>"<<quantity*0.0002642<<" Gal(US)"<<endl;break;
+            case 7:cout<<quantity<<" ml===>"<<quantity<<" cm"<<cube<<endl;break;
+            case 8:cout<<quantity<<" ml===>"<<quantity/1000<<" dm"<<cube<<endl;break;
+            case 9:cout<<quantity<<" ml===>"<<quantity/1000000<<" m"<<cube<<endl;break;
+            case 10:cout<<quantity<<" ml===>"<<quantity*0.0353<<" ft"<<cube<<endl;break;
+            case 11:cout<<quantity<<" ml===>"<<quantity*61.023<<" Inches"<<cube<<endl;break;
+            case 12:cout<<quantity<<" ml===>"<<quantity*0.000001307<<" yz"<<cube<<endl;break;
+            default:break;
+        }
+        break;
+        case 2:
+        switch(to){
+            case 1:cout<<quantity<<" cl===>"<<quantity*10<<" ml"<<endl;break;
+            case 2:cout<<quantity<<" cl===>"<<quantity<<" cl"<<endl;break;
+            case 3:cout<<quantity<<" cl===>"<<quantity/10<<" dl"<<endl;break;
+            case 4:cout<<quantity<<" cl===>"<<quantity/100<<" l"<<endl;break;
+            case 5:cout<<quantity<<" cl===>"<<quantity*0.002199<<" Gal(UK)"<<endl;break;
+            case 6:cout<<quantity<<" cl===>"<<quantity*0.002642<<" Gal(US)"<<endl;break;
+            case 7:cout<<quantity<<" cl===>"<<quantity*10<<" cm"<<cube<<endl;break;
+            case 8:cout<<quantity<<" cl===>"<<quantity/100<<" dm"<<cube<<endl;break;
+            case 9:cout<<quantity<<" cl===>"<<quantity/10000<<" m"<<cube<<endl;break;
+            case 10:cout<<quantity<<" cl===>"<<quantity*0.000353<<" ft"<<cube<<endl;break;
+            case 11:cout<<quantity<<" cl===>"<<quantity*0.61023<<" Inches"<<cube<<endl;break;
+            case 12:cout<<quantity<<" cl===>"<<quantity*0.00001307<<" yz"<<cube<<endl;break;
+            default:break;
+        }
+        break;
+        case 3:
+        switch(to){
+            case 1:cout<<quantity<<" dl===>"<<quantity*100<<" ml"<<endl;break;
+            case 2:cout<<quantity<<" dl===>"<<quantity*10<<" cl"<<endl;break;
+            case 3:cout<<quantity<<" dl===>"<<quantity<<" dl"<<endl;break;
+            case 4:cout<<quantity<<" dl===>"<<quantity/10<<" l"<<endl;break;
+            case 5:cout<<quantity<<" dl===>"<<quantity*0.02199<<" Gal(UK)"<<endl;break;
+            case 6:cout<<quantity<<" dl===>"<<quantity*0.02642<<" Gal(US)"<<endl;break;
+            case 7:cout<<quantity<<" dl===>"<<quantity*100<<" cm"<<cube<<endl;break;
+            case 8:cout<<quantity<<" dl===>"<<quantity/10<<" dm"<<cube<<endl;break;
+            case 9:cout<<quantity<<" dl===>"<<quantity/10000<<" m"<<cube<<endl;break;
+            case 10:cout<<quantity<<" dl===>"<<quantity*0.00353<<" ft"<<cube<<endl;break;
+            case 11:cout<<quantity<<" dl===>"<<quantity*6.1023<<" Inches"<<cube<<endl;break;
+            case 12:cout<<quantity<<" dl===>"<<quantity*0.0001307<<" yz"<<cube<<endl;break;
+            default:break;
+        }
+        break;
+        case 4:
+        switch(to){
+            case 1:cout<<quantity<<" l===>"<<quantity*1000<<" ml"<<endl;break;
+            case 2:cout<<quantity<<" l===>"<<quantity*100<<" cl"<<endl;break;
+            case 3:cout<<quantity<<" l===>"<<quantity*10<<" dl"<<endl;break;
+            case 4:cout<<quantity<<" l===>"<<quantity<<" l"<<endl;break;
+            case 5:cout<<quantity<<" l===>"<<quantity*0.2199<<" Gal(UK)"<<endl;break;
+            case 6:cout<<quantity<<" l===>"<<quantity*0.2642<<" Gal(US)"<<endl;break;
+            case 7:cout<<quantity<<" l===>"<<quantity*1000<<" cm"<<cube<<endl;break;
+            case 8:cout<<quantity<<" l===>"<<quantity<<" dm"<<cube<<endl;break;
+            case 9:cout<<quantity<<" l===>"<<quantity/1000<<" m"<<cube<<endl;break;
+            case 10:cout<<quantity<<" l===>"<<quantity*0.0353<<" ft"<<cube<<endl;break;
+            case 11:cout<<quantity<<" l===>"<<quantity*61.023<<" Inches"<<cube<<endl;break;
+            case 12:cout<<quantity<<" l===>"<<quantity*0.001307<<" yz"<<cube<<endl;break;
+            default:break;
+        }
+        break;
+        case 5:
+        switch(to){
+            case 1:cout<<quantity<<" Gal(UK)===>"<<quantity*4546<<" ml"<<endl;break;
+            case 2:cout<<quantity<<" Gal(UK)===>"<<quantity*454.6<<" cl"<<endl;break;
+            case 3:cout<<quantity<<" Gal(UK)===>"<<quantity*45.46<<" dl"<<endl;break;
+            case 4:cout<<quantity<<" Gal(UK)===>"<<quantity*4.546<<" l"<<endl;break;
+            case 5:cout<<quantity<<" Gal(UK)===>"<<quantity<<" Gal(UK)"<<endl;break;
+            case 6:cout<<quantity<<" Gal(UK)===>"<<quantity*1.201<<" Gal(US)"<<endl;break;
+            case 7:cout<<quantity<<" Gal(UK)===>"<<quantity*4546<<" cm"<<cube<<endl;break;
+            case 8:cout<<quantity<<" Gal(UK)===>"<<quantity*4.546<<" dm"<<cube<<endl;break;
+            case 9:cout<<quantity<<" Gal(UK)===>"<<quantity*0.004546<<" m"<<cube<<endl;break;
+            case 10:cout<<quantity<<" Gal(UK)===>"<<quantity*0.1605<<" ft"<<cube<<endl;break;
+            case 11:cout<<quantity<<" Gal(UK)===>"<<quantity*277.4139<<" Inches"<<cube<<endl;break;
+            case 12:cout<<quantity<<" Gal(UK)===>"<<quantity*0.005945<<" yz"<<cube<<endl;break;
+            default:break;
+        }
+        break;
+        case 6:
+        switch(to){
+            case 1:cout<<quantity<<" Gal(US)===>"<<quantity*3785<<" ml"<<endl;break;
+            case 2:cout<<quantity<<" Gal(US)===>"<<quantity*378.5<<" cl"<<endl;break;
+            case 3:cout<<quantity<<" Gal(US)===>"<<quantity*37.85<<" dl"<<endl;break;
+            case 4:cout<<quantity<<" Gal(US)===>"<<quantity*3.785<<" l"<<endl;break;
+            case 5:cout<<quantity<<" Gal(US)===>"<<quantity*0.8326<<" Gal(UK)"<<endl;break;
+            case 6:cout<<quantity<<" Gal(US)===>"<<quantity<<" Gal(US)"<<endl;break;
+            case 7:cout<<quantity<<" Gal(US)===>"<<quantity*3785<<" cm"<<cube<<endl;break;
+            case 8:cout<<quantity<<" Gal(US)===>"<<quantity*3.785<<" dm"<<cube<<endl;break;
+            case 9:cout<<quantity<<" Gal(US)===>"<<quantity*0.003785<<" m"<<cube<<endl;break;
+            case 10:cout<<quantity<<" Gal(US)===>"<<quantity*0.1336<<" ft"<<cube<<endl;break;
+            case 11:cout<<quantity<<" Gal(US)===>"<<quantity*230.9748<<" Inches"<<cube<<endl;break;
+            case 12:cout<<quantity<<" Gal(US)===>"<<quantity*0.00495<<" yz"<<cube<<endl;break;
+            default:break;
+        }
+        break;
+        case 7:
+        switch(to){
+            case 1:cout<<quantity<<" cm"<<cube<<"===>"<<quantity<<" ml"<<endl;break;
+            case 2:cout<<quantity<<" cm"<<cube<<"===>"<<quantity/10<<" cl"<<endl;break;
+            case 3:cout<<quantity<<" cm"<<cube<<"===>"<<quantity/100<<" dl"<<endl;break;
+            case 4:cout<<quantity<<" cm"<<cube<<"===>"<<quantity/1000<<" l"<<endl;break;
+            case 5:cout<<quantity<<" cm"<<cube<<"===>"<<quantity*0.0002199<<" Gal(UK)"<<endl;break;
+            case 6:cout<<quantity<<" cm"<<cube<<"===>"<<quantity*0.0002642<<" Gal(US)"<<endl;break;
+            case 7:cout<<quantity<<" cm"<<cube<<"===>"<<quantity<<" cm"<<cube<<endl;break;
+            case 8:cout<<quantity<<" cm"<<cube<<"===>"<<quantity/1000<<" dm"<<cube<<endl;break;
+            case 9:cout<<quantity<<" cm"<<cube<<"===>"<<quantity/1000000<<" m"<<cube<<endl;break;
+            case 10:cout<<quantity<<" cm"<<cube<<"===>"<<quantity*0.0000353<<" ft"<<cube<<endl;break;
+            case 11:cout<<quantity<<" cm"<<cube<<"===>"<<quantity*0.061023<<" Inches"<<cube<<endl;break;
+            case 12:cout<<quantity<<" cm"<<cube<<"===>"<<quantity*0.000001307<<" yz"<<cube<<endl;break;
+            default:break;
+        }
+        break;
+        case 8:
+        switch(to){
+            case 1:cout<<quantity<<" dm"<<cube<<"===>"<<quantity*1000<<" ml"<<endl;break;
+            case 2:cout<<quantity<<" dm"<<cube<<"===>"<<quantity*100<<" cl"<<endl;break;
+            case 3:cout<<quantity<<" dm"<<cube<<"===>"<<quantity*10<<" dl"<<endl;break;
+            case 4:cout<<quantity<<" dm"<<cube<<"===>"<<quantity<<" l"<<endl;break;
+            case 5:cout<<quantity<<" dm"<<cube<<"===>"<<quantity*0.2199<<" Gal(UK)"<<endl;break;
+            case 6:cout<<quantity<<" dm"<<cube<<"===>"<<quantity*0.2642<<" Gal(US)"<<endl;break;
+            case 7:cout<<quantity<<" dm"<<cube<<"===>"<<quantity*1000<<" cm"<<cube<<endl;break;
+            case 8:cout<<quantity<<" dm"<<cube<<"===>"<<quantity<<" dm"<<cube<<endl;break;
+            case 9:cout<<quantity<<" dm"<<cube<<"===>"<<quantity/1000<<" m"<<cube<<endl;break;
+            case 10:cout<<quantity<<" dm"<<cube<<"===>"<<quantity*0.0353<<" ft"<<cube<<endl;break;
+            case 11:cout<<quantity<<" dm"<<cube<<"===>"<<quantity*61.023<<" Inches"<<cube<<endl;break;
+            case 12:cout<<quantity<<" dm"<<cube<<"===>"<<quantity*0.001307<<" yz"<<cube<<endl;break;
+            default:break;
+        }
+        break;
+        case 9:
+        switch(to){
+            case 1:cout<<quantity<<" m"<<cube<<"===>"<<quantity*1000000<<" ml"<<endl;break;
+            case 2:cout<<quantity<<" m"<<cube<<"===>"<<quantity*100000<<" cl"<<endl;break;
+            case 3:cout<<quantity<<" m"<<cube<<"===>"<<quantity*10000<<" dl"<<endl;break;
+            case 4:cout<<quantity<<" m"<<cube<<"===>"<<quantity*1000<<" l"<<endl;break;
+            case 5:cout<<quantity<<" m"<<cube<<"===>"<<quantity*219.9736<<" Gal(UK)"<<endl;break;
+            case 6:cout<<quantity<<" m"<<cube<<"===>"<<quantity*264.2<<" Gal(US)"<<endl;break;
+            case 7:cout<<quantity<<" m"<<cube<<"===>"<<quantity*1000000<<" cm"<<cube<<endl;break;
+            case 8:cout<<quantity<<" m"<<cube<<"===>"<<quantity*1000<<" dm"<<cube<<endl;break;
+            case 9:cout<<quantity<<" m"<<cube<<"===>"<<quantity<<" m"<<cube<<endl;break;
+            case 10:cout<<quantity<<" m"<<cube<<"===>"<<quantity*31.3107<<" ft"<<cube<<endl;break;
+            case 11:cout<<quantity<<" m"<<cube<<"===>"<<quantity*61023.744<<" Inches"<<cube<<endl;break;
+            case 12:cout<<quantity<<" m"<<cube<<"===>"<<quantity*1.307<<" yz"<<cube<<endl;break;
+            default:break;
+        }
+        break;
+        case 10:
+        switch(to){
+            case 1:cout<<quantity<<" ft"<<cube<<"===>"<<quantity*28320<<" ml"<<endl;break;
+            case 2:cout<<quantity<<" ft"<<cube<<"===>"<<quantity*2832<<" cl"<<endl;break;
+            case 3:cout<<quantity<<" ft"<<cube<<"===>"<<quantity*283.2<<" dl"<<endl;break;
+            case 4:cout<<quantity<<" ft"<<cube<<"===>"<<quantity*28.32<<" l"<<endl;break;
+            case 5:cout<<quantity<<" ft"<<cube<<"===>"<<quantity*6.2296<<" Gal(UK)"<<endl;break;
+            case 6:cout<<quantity<<" ft"<<cube<<"===>"<<quantity*7.4821<<" Gal(US)"<<endl;break;
+            case 7:cout<<quantity<<" ft"<<cube<<"===>"<<quantity*28320<<" cm"<<cube<<endl;break;
+            case 8:cout<<quantity<<" ft"<<cube<<"===>"<<quantity*28.32<<" dm"<<cube<<endl;break;
+            case 9:cout<<quantity<<" ft"<<cube<<"===>"<<quantity*0.02832<<" m"<<cube<<endl;break;
+            case 10:cout<<quantity<<" ft"<<cube<<"===>"<<quantity<<" ft"<<cube<<endl;break;
+            case 11:cout<<quantity<<" ft"<<cube<<"===>"<<quantity*1728.1924<<" Inches"<<cube<<endl;break;
+            case 12:cout<<quantity<<" ft"<<cube<<"===>"<<quantity*0.03704<<" yz"<<cube<<endl;break;
+            default:break;
+        }
+        break;
+        case 11:
+        switch(to){
+            case 1:cout<<quantity<<" Inches"<<cube<<"===>"<<quantity*16.3870<<" ml"<<endl;break;
+            case 2:cout<<quantity<<" Inches"<<cube<<"===>"<<quantity*1.6387<<" cl"<<endl;break;
+            case 3:cout<<quantity<<" Inches"<<cube<<"===>"<<quantity*0.16387<<" dl"<<endl;break;
+            case 4:cout<<quantity<<" Inches"<<cube<<"===>"<<quantity*0.016387<<" l"<<endl;break;
+            case 5:cout<<quantity<<" Inches"<<cube<<"===>"<<quantity*0.003604<<" Gal(UK)"<<endl;break;
+            case 6:cout<<quantity<<" Inches"<<cube<<"===>"<<quantity*0.004329<<" Gal(US)"<<endl;break;
+            case 7:cout<<quantity<<" Inches"<<cube<<"===>"<<quantity*16.387<<" cm"<<cube<<endl;break;
+            case 8:cout<<quantity<<" Inches"<<cube<<"===>"<<quantity*0.016387<<" dm"<<cube<<endl;break;
+            case 9:cout<<quantity<<" Inches"<<cube<<"===>"<<quantity*0.000016387<<" m"<<cube<<endl;break;
+            case 10:cout<<quantity<<" Inches"<<cube<<"===>"<<quantity*0.0005786<<" ft"<<cube<<endl;break;
+            case 11:cout<<quantity<<" Inches"<<cube<<"===>"<<quantity<<" Inches"<<cube<<endl;break;
+            case 12:cout<<quantity<<" Inches"<<cube<<"===>"<<quantity*0.00002143<<" yz"<<cube<<endl;break;
+            default:break;
+        }
+        break;
+        case 12:
+        switch(to){
+            case 1:cout<<quantity<<" yz"<<cube<<"===>"<<quantity*764560<<" ml"<<endl;break;
+            case 2:cout<<quantity<<" yz"<<cube<<"===>"<<quantity*76456<<" cl"<<endl;break;
+            case 3:cout<<quantity<<" yz"<<cube<<"===>"<<quantity*7645.6<<" dl"<<endl;break;
+            case 4:cout<<quantity<<" yz"<<cube<<"===>"<<quantity*764.56<<" l"<<endl;break;
+            case 5:cout<<quantity<<" yz"<<cube<<"===>"<<quantity*168.183<<" Gal(UK)"<<endl;break;
+            case 6:cout<<quantity<<" yz"<<cube<<"===>"<<quantity*01.997<<" Gal(US)"<<endl;break;
+            case 7:cout<<quantity<<" yz"<<cube<<"===>"<<quantity*764560<<" cm"<<cube<<endl;break;
+            case 8:cout<<quantity<<" yz"<<cube<<"===>"<<quantity*764.56<<" dm"<<cube<<endl;break;
+            case 9:cout<<quantity<<" yz"<<cube<<"===>"<<quantity*0.76456<<" m"<<cube<<endl;break;
+            case 10:cout<<quantity<<" yz"<<cube<<"===>"<<quantity*26.997<<" ft"<<cube<<endl;break;
+            case 11:cout<<quantity<<" yz"<<cube<<"===>"<<quantity*46656.313<<" Inches"<<cube<<endl;break;
+            case 12:cout<<quantity<<" yz"<<cube<<"===>"<<quantity<<" yz"<<cube<<endl;break;
+            default:break;
+        }
+        break;
+        default:break;
+    }
+}
+
 void convertesteTimp(int from, int to,double quantity)
-{}
-*/
+{
+    switch(from){
+        case 1:
+            switch(to){
+                case 1:cout<<quantity<<" w===>"<<quantity<<" w"<<endl;break;
+                case 2:cout<<quantity<<" w===>"<<quantity*7<<" d"<<endl;break;
+                case 3:cout<<quantity<<" w===>"<<quantity*7*24<<" h"<<endl;break;
+                case 4:cout<<quantity<<" w===>"<<quantity*7*24*60<<" min"<<endl;break;
+                case 5:cout<<quantity<<" w===>"<<quantity*7*24*3600<<" s"<<endl;break;
+                case 6:cout<<quantity<<" w===>"<<quantity*604800000<<" ms"<<endl;break;
+                default:break;
+            }
+        break;
+        case 2:
+            switch(to){
+                case 1:cout<<quantity<<" d===>"<<quantity/7<<" w"<<endl;break;
+                case 2:cout<<quantity<<" d===>"<<quantity<<" d"<<endl;break;
+                case 3:cout<<quantity<<" d===>"<<quantity*24<<" h"<<endl;break;
+                case 4:cout<<quantity<<" d===>"<<quantity*24*60<<" min"<<endl;break;
+                case 5:cout<<quantity<<" d===>"<<quantity*24*3600<<" s"<<endl;break;
+                case 6:cout<<quantity<<" d===>"<<quantity*86400000<<" ms"<<endl;break;
+                default:break;
+            }
+        break;
+        case 3:
+            switch(to){
+                case 1:cout<<quantity<<" h===>"<<quantity/24/7<<" w"<<endl;break;
+                case 2:cout<<quantity<<" h===>"<<quantity/24<<" d"<<endl;break;
+                case 3:cout<<quantity<<" h===>"<<quantity<<" h"<<endl;break;
+                case 4:cout<<quantity<<" h===>"<<quantity*60<<" min"<<endl;break;
+                case 5:cout<<quantity<<" h===>"<<quantity*3600<<" s"<<endl;break;
+                case 6:cout<<quantity<<" h===>"<<quantity*3600000<<" ms"<<endl;break;
+                default:break;
+            }
+        break;
+        case 4:
+            switch(to){
+                case 1:cout<<quantity<<" min===>"<<quantity*0.00009920<<" w"<<endl;break;
+                case 2:cout<<quantity<<" min===>"<<quantity/60/24<<" d"<<endl;break;
+                case 3:cout<<quantity<<" min===>"<<quantity/60<<" h"<<endl;break;
+                case 4:cout<<quantity<<" min===>"<<quantity<<" min"<<endl;break;
+                case 5:cout<<quantity<<" min===>"<<quantity*60<<" s"<<endl;break;
+                case 6:cout<<quantity<<" min===>"<<quantity*60*1000<<" ms"<<endl;break;
+                default:break;
+            }
+        break;
+        case 5:
+            switch(to){
+                case 1:cout<<quantity<<" s===>"<<quantity*0.000001653<<" w"<<endl;break;
+                case 2:cout<<quantity<<" s===>"<<quantity*0.000011574<<" d"<<endl;break;
+                case 3:cout<<quantity<<" s===>"<<quantity/3600<<" h"<<endl;break;
+                case 4:cout<<quantity<<" s===>"<<quantity/60<<" min"<<endl;break;
+                case 5:cout<<quantity<<" s===>"<<quantity<<" s"<<endl;break;
+                case 6:cout<<quantity<<" s===>"<<quantity*1000<<" ms"<<endl;break;
+                default:break;
+            }
+        break;
+        case 6:
+            switch(to){
+                case 1:cout<<quantity<<" ms===>"<<quantity*(1.6534e-9)<<" w"<<endl;break;
+                case 2:cout<<quantity<<" ms===>"<<quantity*(1.15740e-8)<<" d"<<endl;break;
+                case 3:cout<<quantity<<" ms===>"<<quantity*(2.777e-7)<<" h"<<endl;break;
+                case 4:cout<<quantity<<" ms===>"<<quantity/1000/60<<" min"<<endl;break;
+                case 5:cout<<quantity<<" ms===>"<<quantity/1000<<" s"<<endl;break;
+                case 6:cout<<quantity<<" ms===>"<<quantity<<" ms"<<endl;break;
+                default:break;
+            }
+        break;
+        default:break;
+    }
+}
 void convertesteViteza(int from, int to,double quantity)
 {
     switch(from){
@@ -696,14 +1098,320 @@ void convertesteTemperatura(int from, int to,double quantity)
             break;
     }
 }
-/*
+
 void convertesteMasa(int from, int to,double quantity)
-{}
+{
+    switch(from){
+    case 1:
+        switch(to){
+            case 1:cout<<quantity<<" mg===>"<<quantity<<" mg"<<endl;break;
+            case 2:cout<<quantity<<" mg===>"<<quantity/1000<<" g"<<endl;break;
+            case 3:cout<<quantity<<" mg===>"<<quantity/1000000<<" kg"<<endl;break;
+            case 4:cout<<quantity<<" mg===>"<<quantity/1000000000<<" t"<<endl;break;
+            case 5:cout<<quantity<<" mg===>"<<quantity*0.0000022<<" lb"<<endl;break;
+            case 6:cout<<quantity<<" mg===>"<<quantity*0.00003527<<" oz(AV)"<<endl;break;
+            case 7:cout<<quantity<<" mg===>"<<quantity*0.00003215<<" oz(Troy)"<<endl;break;
+            default:break;
+        }
+        break;
+    case 2:
+        switch(to){
+            case 1:cout<<quantity<<" g===>"<<quantity*1000<<" mg"<<endl;break;
+            case 2:cout<<quantity<<" g===>"<<quantity<<" g"<<endl;break;
+            case 3:cout<<quantity<<" g===>"<<quantity/1000<<" kg"<<endl;break;
+            case 4:cout<<quantity<<" g===>"<<quantity/1000000<<" t"<<endl;break;
+            case 5:cout<<quantity<<" g===>"<<quantity*0.002246<<" lb"<<endl;break;
+            case 6:cout<<quantity<<" g===>"<<quantity*0.03527<<" oz(AV)"<<endl;break;
+            case 7:cout<<quantity<<" g===>"<<quantity*0.032150<<" oz(Troy)"<<endl;break;
+            default:break;
+        }
+        break;
+    case 3:
+        switch(to){
+            case 1:cout<<quantity<<" kg===>"<<quantity*1000000<<" mg"<<endl;break;
+            case 2:cout<<quantity<<" kg===>"<<quantity*1000<<" g"<<endl;break;
+            case 3:cout<<quantity<<" kg===>"<<quantity<<" kg"<<endl;break;
+            case 4:cout<<quantity<<" kg===>"<<quantity/1000<<" t"<<endl;break;
+            case 5:cout<<quantity<<" kg===>"<<quantity*2.20462442<<" lb"<<endl;break;
+            case 6:cout<<quantity<<" kg===>"<<quantity*35.27399<<" oz(AV)"<<endl;break;
+            case 7:cout<<quantity<<" kg===>"<<quantity*32.1507225<<" oz(Troy)"<<endl;break;
+            default:break;
+        }
+        break;
+    case 4:
+        switch(to){
+            case 1:cout<<quantity<<" t===>"<<quantity*1000000000<<" mg"<<endl;break;
+            case 2:cout<<quantity<<" t===>"<<quantity*1000000<<" g"<<endl;break;
+            case 3:cout<<quantity<<" t===>"<<quantity*1000<<" kg"<<endl;break;
+            case 4:cout<<quantity<<" t===>"<<quantity<<" t"<<endl;break;
+            case 5:cout<<quantity<<" t===>"<<quantity*2204.6244<<" lb"<<endl;break;
+            case 6:cout<<quantity<<" t===>"<<quantity*35273.9907<<" oz(AV)"<<endl;break;
+            case 7:cout<<quantity<<" t===>"<<quantity*32150.7225<<" oz(Troy)"<<endl;break;
+            default:break;
+        }
+        break;
+    case 5:
+        switch(to){
+            case 1:cout<<quantity<<" lb===>"<<quantity*453592<<" mg"<<endl;break;
+            case 2:cout<<quantity<<" lb===>"<<quantity*453.592<<" g"<<endl;break;
+            case 3:cout<<quantity<<" lb===>"<<quantity*0.453592<<" kg"<<endl;break;
+            case 4:cout<<quantity<<" lb===>"<<quantity*0.000453592<<" t"<<endl;break;
+            case 5:cout<<quantity<<" lb===>"<<quantity<<" lb"<<endl;break;
+            case 6:cout<<quantity<<" lb===>"<<quantity*16<<" oz(AV)"<<endl;break;
+            case 7:cout<<quantity<<" lb===>"<<quantity*14.5833<<" oz(Troy)"<<endl;break;
+            default:break;
+        }
+        break;
+    case 6:
+        switch(to){
+            case 1:cout<<quantity<<" oz(AV)===>"<<quantity*28349.5<<" mg"<<endl;break;
+            case 2:cout<<quantity<<" oz(AV)===>"<<quantity*28.3495<<" g"<<endl;break;
+            case 3:cout<<quantity<<" oz(AV)===>"<<quantity*0.0283495<<" kg"<<endl;break;
+            case 4:cout<<quantity<<" oz(AV)===>"<<quantity*0.0000283495<<" t"<<endl;break;
+            case 5:cout<<quantity<<" oz(AV)===>"<<quantity/16<<" lb"<<endl;break;
+            case 6:cout<<quantity<<" oz(AV)===>"<<quantity<<" oz(AV)"<<endl;break;
+            case 7:cout<<quantity<<" oz(AV)===>"<<quantity*0.911456<<" oz(Troy)"<<endl;break;
+            default:break;
+        }
+        break;
+    case 7:
+        switch(to){
+            case 1:cout<<quantity<<" oz(Troy)===>"<<quantity*31103.5<<" mg"<<endl;break;
+            case 2:cout<<quantity<<" oz(Troy)===>"<<quantity*31.1035<<" g"<<endl;break;
+            case 3:cout<<quantity<<" oz(Troy)===>"<<quantity*0.0311035<<" kg"<<endl;break;
+            case 4:cout<<quantity<<" oz(Troy)===>"<<quantity*0.0000311035<<" t"<<endl;break;
+            case 5:cout<<quantity<<" oz(Troy)===>"<<quantity*0.06857153<<" lb"<<endl;break;
+            case 6:cout<<quantity<<" oz(Troy)===>"<<quantity*1.09714457<<" oz(AV)"<<endl;break;
+            case 7:cout<<quantity<<" oz(Troy)===>"<<quantity<<" oz(Troy)"<<endl;break;
+            default:break;
+        }
+        break;
+        default:break;
+    }
+}
 void convertesteEnergie(int from, int to,double quantity)
-{}
+{
+    switch(from){
+    case 1:
+        switch(to){
+            case 1:cout<<quantity<<" cal===>"<<quantity<<" cal"<<endl;break;
+            case 2:cout<<quantity<<" cal===>"<<quantity/1000<<" kcal"<<endl;break;
+            case 3:cout<<quantity<<" cal===>"<<quantity*4.1868<<" J"<<endl;break;
+            case 4:cout<<quantity<<" cal===>"<<quantity*0.0041868<<" KJ"<<endl;break;
+            case 5:cout<<quantity<<" cal===>"<<quantity*4.1868<<" W.s"<<endl;break;
+            case 6:cout<<quantity<<" cal===>"<<quantity*0.001163<<" W.h"<<endl;break;
+            case 7:cout<<quantity<<" cal===>"<<quantity*0.000001163<<" kW.h"<<endl;break;
+            default:break;
+        }
+        break;
+    case 2:
+        switch(to){
+            case 1:cout<<quantity<<" kcal===>"<<quantity*1000<<" cal"<<endl;break;
+            case 2:cout<<quantity<<" kcal===>"<<quantity<<" kcal"<<endl;break;
+            case 3:cout<<quantity<<" kcal===>"<<quantity*4186.8<<" J"<<endl;break;
+            case 4:cout<<quantity<<" kcal===>"<<quantity*4.1868<<" KJ"<<endl;break;
+            case 5:cout<<quantity<<" kcal===>"<<quantity*4186.8<<" W.s"<<endl;break;
+            case 6:cout<<quantity<<" kcal===>"<<quantity*1.163<<" W.h"<<endl;break;
+            case 7:cout<<quantity<<" kcal===>"<<quantity*0.001163<<" kW.h"<<endl;break;
+            default:break;
+        }
+        break;
+    case 3:
+        switch(to){
+            case 1:cout<<quantity<<" J===>"<<quantity*0.2388<<" cal"<<endl;break;
+            case 2:cout<<quantity<<" J===>"<<quantity*0.0002388<<" kcal"<<endl;break;
+            case 3:cout<<quantity<<" J===>"<<quantity<<" J"<<endl;break;
+            case 4:cout<<quantity<<" J===>"<<quantity/1000<<" KJ"<<endl;break;
+            case 5:cout<<quantity<<" J===>"<<quantity<<" W.s"<<endl;break;
+            case 6:cout<<quantity<<" J===>"<<quantity*0.000277<<" W.h"<<endl;break;
+            case 7:cout<<quantity<<" J===>"<<quantity*2.77<<" kW.h"<<endl;break;
+            default:break;
+        }
+        break;
+    case 4:
+        switch(to){
+            case 1:cout<<quantity<<" KJ===>"<<quantity*238.845<<" cal"<<endl;break;
+            case 2:cout<<quantity<<" KJ===>"<<quantity*0.2388<<" kcal"<<endl;break;
+            case 3:cout<<quantity<<" KJ===>"<<quantity*1000<<" J"<<endl;break;
+            case 4:cout<<quantity<<" KJ===>"<<quantity<<" KJ"<<endl;break;
+            case 5:cout<<quantity<<" KJ===>"<<quantity*1000<<" W.s"<<endl;break;
+            case 6:cout<<quantity<<" KJ===>"<<quantity*0.277<<" W.h"<<endl;break;
+            case 7:cout<<quantity<<" KJ===>"<<quantity*0.000277<<" kW.h"<<endl;break;
+            default:break;
+        }
+        break;
+    case 5:
+        switch(to){
+            case 1:cout<<quantity<<" W.s===>"<<quantity*0.2388<<" cal"<<endl;break;
+            case 2:cout<<quantity<<" W.s===>"<<quantity*0.0002388<<" kcal"<<endl;break;
+            case 3:cout<<quantity<<" W.s===>"<<quantity<<" J"<<endl;break;
+            case 4:cout<<quantity<<" W.s===>"<<quantity/1000<<" KJ"<<endl;break;
+            case 5:cout<<quantity<<" W.s===>"<<quantity<<" W.s"<<endl;break;
+            case 6:cout<<quantity<<" W.s===>"<<quantity*0.0002777<<" W.h"<<endl;break;
+            case 7:cout<<quantity<<" W.s===>"<<quantity*2.777<<" kW.h"<<endl;break;
+            default:break;
+        }
+        break;
+    case 6:
+        switch(to){
+            case 1:cout<<quantity<<" W.h===>"<<quantity*859.845<<" cal"<<endl;break;
+            case 2:cout<<quantity<<" W.h===>"<<quantity*0.859845<<" kcal"<<endl;break;
+            case 3:cout<<quantity<<" W.h===>"<<quantity*3600<<" J"<<endl;break;
+            case 4:cout<<quantity<<" W.h===>"<<quantity*3.6<<" KJ"<<endl;break;
+            case 5:cout<<quantity<<" W.h===>"<<quantity*3600<<" W.s"<<endl;break;
+            case 6:cout<<quantity<<" W.h===>"<<quantity<<" W.h"<<endl;break;
+            case 7:cout<<quantity<<" W.h===>"<<quantity/1000<<" kW.h"<<endl;break;
+            default:break;
+        }
+        break;
+    case 7:
+        switch(to){
+            case 1:cout<<quantity<<" kW.h===>"<<quantity*859845.227<<" cal"<<endl;break;
+            case 2:cout<<quantity<<" kW.h===>"<<quantity*859.845227<<" kcal"<<endl;break;
+            case 3:cout<<quantity<<" kW.h===>"<<quantity*3600000<<" J"<<endl;break;
+            case 4:cout<<quantity<<" kW.h===>"<<quantity*3600<<" KJ"<<endl;break;
+            case 5:cout<<quantity<<" kW.h===>"<<quantity*3600000<<" W.s"<<endl;break;
+            case 6:cout<<quantity<<" kW.h===>"<<quantity*1000<<" W.h"<<endl;break;
+            case 7:cout<<quantity<<" kW.h===>"<<quantity<<" kW.h"<<endl;break;
+            default:break;
+        }
+        break;
+        default:break;
+    }
+}
 void convertestePresiune(int from, int to,double quantity)
-{}
-*/
+{
+    switch(from){
+    case 1:
+        switch(to){
+            case 1:cout<<quantity<<" at===>"<<quantity<<" at"<<endl;break;
+            case 2:cout<<quantity<<" at===>"<<quantity*0.967<<" atm"<<endl;break;
+            case 3:cout<<quantity<<" at===>"<<quantity*1000.678<<" mbar"<<endl;break;
+            case 4:cout<<quantity<<" at===>"<<quantity*1.0006<<" bar"<<endl;break;
+            case 5:cout<<quantity<<" at===>"<<quantity*98066.5<<" Pa"<<endl;break;
+            case 6:cout<<quantity<<" at===>"<<quantity*98.0665<<" KPa"<<endl;break;
+            case 7:cout<<quantity<<" at===>"<<quantity*0.0980665<<" MPa"<<endl;break;
+            case 8:cout<<quantity<<" at===>"<<quantity*735.559<<" Torr"<<endl;break;
+            case 9:cout<<quantity<<" at===>"<<quantity*14.22<<" Psi"<<endl;break;
+            default:break;
+        }
+        break;
+    case 2:
+        switch(to){
+            case 1:cout<<quantity<<" atm===>"<<quantity*1.0332<<" at"<<endl;break;
+            case 2:cout<<quantity<<" atm===>"<<quantity<<" atm"<<endl;break;
+            case 3:cout<<quantity<<" atm===>"<<quantity*1033.931<<" mbar"<<endl;break;
+            case 4:cout<<quantity<<" atm===>"<<quantity*1.033931<<" bar"<<endl;break;
+            case 5:cout<<quantity<<" atm===>"<<quantity*101325.2738<<" Pa"<<endl;break;
+            case 6:cout<<quantity<<" atm===>"<<quantity*101.3252738<<" KPa"<<endl;break;
+            case 7:cout<<quantity<<" atm===>"<<quantity*0.1013252738<<" MPa"<<endl;break;
+            case 8:cout<<quantity<<" atm===>"<<quantity*760.002<<" Torr"<<endl;break;
+            case 9:cout<<quantity<<" atm===>"<<quantity*14.695<<" Psi"<<endl;break;
+            default:break;
+        }
+        break;
+    case 3:
+        switch(to){
+            case 1:cout<<quantity<<" mbar===>"<<quantity*0.000999312<<" at"<<endl;break;
+            case 2:cout<<quantity<<" mbar===>"<<quantity*0.0009671<<" atm"<<endl;break;
+            case 3:cout<<quantity<<" mbar===>"<<quantity<<" mbar"<<endl;break;
+            case 4:cout<<quantity<<" mbar===>"<<quantity/1000<<" bar"<<endl;break;
+            case 5:cout<<quantity<<" mbar===>"<<quantity*98<<" Pa"<<endl;break;
+            case 6:cout<<quantity<<" mbar===>"<<quantity*0.098<<" KPa"<<endl;break;
+            case 7:cout<<quantity<<" mbar===>"<<quantity*0.000098<<" MPa"<<endl;break;
+            case 8:cout<<quantity<<" mbar===>"<<quantity*0.735<<" Torr"<<endl;break;
+            case 9:cout<<quantity<<" mbar===>"<<quantity*0.0142<<" Psi"<<endl;break;
+            default:break;
+        }
+        break;
+    case 4:
+        switch(to){
+            case 1:cout<<quantity<<" bar===>"<<quantity*0.999312<<" at"<<endl;break;
+            case 2:cout<<quantity<<" bar===>"<<quantity*0.9671<<" atm"<<endl;break;
+            case 3:cout<<quantity<<" bar===>"<<quantity*1000<<" mbar"<<endl;break;
+            case 4:cout<<quantity<<" bar===>"<<quantity<<" bar"<<endl;break;
+            case 5:cout<<quantity<<" bar===>"<<quantity*98000<<" Pa"<<endl;break;
+            case 6:cout<<quantity<<" bar===>"<<quantity*98<<" KPa"<<endl;break;
+            case 7:cout<<quantity<<" bar===>"<<quantity*0.098<<" MPa"<<endl;break;
+            case 8:cout<<quantity<<" bar===>"<<quantity*735.060<<" Torr"<<endl;break;
+            case 9:cout<<quantity<<" bar===>"<<quantity*14.213<<" Psi"<<endl;break;
+            default:break;
+        }
+        break;
+    case 5:
+        switch(to){
+            case 1:cout<<quantity<<" Pa===>"<<quantity*0.000010197<<" at"<<endl;break;
+            case 2:cout<<quantity<<" Pa===>"<<quantity*0.000009869<<" atm"<<endl;break;
+            case 3:cout<<quantity<<" Pa===>"<<quantity*0.01020<<" mbar"<<endl;break;
+            case 4:cout<<quantity<<" Pa===>"<<quantity*0.00001020<<" bar"<<endl;break;
+            case 5:cout<<quantity<<" Pa===>"<<quantity<<" Pa"<<endl;break;
+            case 6:cout<<quantity<<" Pa===>"<<quantity/1000<<" KPa"<<endl;break;
+            case 7:cout<<quantity<<" Pa===>"<<quantity/1000000<<" MPa"<<endl;break;
+            case 8:cout<<quantity<<" Pa===>"<<quantity*0.0075<<" Torr"<<endl;break;
+            case 9:cout<<quantity<<" Pa===>"<<quantity*0.000145<<" Psi"<<endl;break;
+            default:break;
+        }
+        break;
+    case 6:
+        switch(to){
+            case 1:cout<<quantity<<" KPa===>"<<quantity*0.010197<<" at"<<endl;break;
+            case 2:cout<<quantity<<" KPa===>"<<quantity*0.009869<<" atm"<<endl;break;
+            case 3:cout<<quantity<<" KPa===>"<<quantity*10.2040<<" mbar"<<endl;break;
+            case 4:cout<<quantity<<" KPa===>"<<quantity*0.010204<<" bar"<<endl;break;
+            case 5:cout<<quantity<<" KPa===>"<<quantity*1000<<" Pa"<<endl;break;
+            case 6:cout<<quantity<<" KPa===>"<<quantity<<" KPa"<<endl;break;
+            case 7:cout<<quantity<<" KPa===>"<<quantity/1000<<" MPa"<<endl;break;
+            case 8:cout<<quantity<<" KPa===>"<<quantity*7.500616<<" Torr"<<endl;break;
+            case 9:cout<<quantity<<" KPa===>"<<quantity*0.145<<" Psi"<<endl;break;
+            default:break;
+        }
+        break;
+    case 7:
+        switch(to){
+            case 1:cout<<quantity<<" MPa===>"<<quantity*10.197<<" at"<<endl;break;
+            case 2:cout<<quantity<<" MPa===>"<<quantity*9.869<<" atm"<<endl;break;
+            case 3:cout<<quantity<<" MPa===>"<<quantity*10204.0816<<" mbar"<<endl;break;
+            case 4:cout<<quantity<<" MPa===>"<<quantity*10.2040816<<" bar"<<endl;break;
+            case 5:cout<<quantity<<" MPa===>"<<quantity*1000000<<" Pa"<<endl;break;
+            case 6:cout<<quantity<<" MPa===>"<<quantity*1000<<" KPa"<<endl;break;
+            case 7:cout<<quantity<<" MPa===>"<<quantity<<" MPa"<<endl;break;
+            case 8:cout<<quantity<<" MPa===>"<<quantity*7500.616<<" Torr"<<endl;break;
+            case 9:cout<<quantity<<" MPa===>"<<quantity*145.037<<" Psi"<<endl;break;
+            default:break;
+        }
+        break;
+    case 8:
+        switch(to){
+            case 1:cout<<quantity<<" Torr===>"<<quantity*0.001359<<" at"<<endl;break;
+            case 2:cout<<quantity<<" Torr===>"<<quantity*0.001315<<" atm"<<endl;break;
+            case 3:cout<<quantity<<" Torr===>"<<quantity*1.360432<<" mbar"<<endl;break;
+            case 4:cout<<quantity<<" Torr===>"<<quantity*0.001360432<<" bar"<<endl;break;
+            case 5:cout<<quantity<<" Torr===>"<<quantity*133.322<<" Pa"<<endl;break;
+            case 6:cout<<quantity<<" Torr===>"<<quantity*0.133322<<" KPa"<<endl;break;
+            case 7:cout<<quantity<<" Torr===>"<<quantity*0.000133322<<" MPa"<<endl;break;
+            case 8:cout<<quantity<<" Torr===>"<<quantity<<" Torr"<<endl;break;
+            case 9:cout<<quantity<<" Torr===>"<<quantity*0.019336<<" Psi"<<endl;break;
+            default:break;
+        }
+        break;
+    case 9:
+        switch(to){
+            case 1:cout<<quantity<<" Psi===>"<<quantity*0.070306<<" at"<<endl;break;
+            case 2:cout<<quantity<<" Psi===>"<<quantity*0.068045<<" atm"<<endl;break;
+            case 3:cout<<quantity<<" Psi===>"<<quantity*70.3546<<" mbar"<<endl;break;
+            case 4:cout<<quantity<<" Psi===>"<<quantity*0.0703546<<" bar"<<endl;break;
+            case 5:cout<<quantity<<" Psi===>"<<quantity*6894.7572<<" Pa"<<endl;break;
+            case 6:cout<<quantity<<" Psi===>"<<quantity*6.8947572<<" KPa"<<endl;break;
+            case 7:cout<<quantity<<" Psi===>"<<quantity*0.0068947572<<" MPa"<<endl;break;
+            case 8:cout<<quantity<<" Psi===>"<<quantity*51.71493<<" Torr"<<endl;break;
+            case 9:cout<<quantity<<" Psi===>"<<quantity<<" Psi"<<endl;break;
+            default:break;
+        }
+        break;
+        default:break;
+    }
+}
+
 void convertesteDensitate(int from, int to,double quantity)
 {
     switch(from){
@@ -929,7 +1637,7 @@ void convertesteConsum(int from, int to,double quantity)
     }
 }
 
-void choose_and_printLungime()//9
+void choose_and_printLungime()//9 ok
 {
     int From,To,Quant;
     afisare_optiuniLungime();cout<<endl<<endl;
@@ -950,9 +1658,9 @@ void choose_and_printLungime()//9
             cout<<"What quantity do you want to convert?"<<endl;
             cin>>Quant;
 
-//convertesteLungime(From,To,Quant);
+convertesteLungime(From,To,Quant);
 }
-void choose_and_printArie()//10
+void choose_and_printArie()//10 ok
 {
     int From,To,Quant;
     afisare_optiuniArie();cout<<endl<<endl;
@@ -974,7 +1682,7 @@ void choose_and_printArie()//10
             cin>>Quant;
     convertesteArie(From,To,Quant);
 }
-void choose_and_printVolum()//12
+void choose_and_printVolum()//12 ok
 {
     int From,To,Quant;
     afisare_optiuniVolum();cout<<endl<<endl;
@@ -994,8 +1702,9 @@ void choose_and_printVolum()//12
             }
             cout<<"What quantity do you want to convert?"<<endl;
             cin>>Quant;
+            convertesteVolum(From,To,Quant);
 }
-void choose_and_printTimp()//6
+void choose_and_printTimp()//6 ok
 {
     int From,To,Quant;
     afisare_optiuniTimp();cout<<endl<<endl;
@@ -1015,6 +1724,7 @@ void choose_and_printTimp()//6
             }
             cout<<"What quantity do you want to convert?"<<endl;
             cin>>Quant;
+            convertesteTimp(From,To,Quant);
 }
 void choose_and_printViteza()//15 ok
 {
@@ -1081,48 +1791,51 @@ void choose_and_printMasa()//7
             }
             cout<<"What quantity do you want to convert?"<<endl;
             cin>>Quant;
+            convertesteMasa(From,To,Quant);
 }
-void choose_and_printEnergie()//8
+void choose_and_printEnergie()//7 ok
 {
     int From,To,Quant;
     afisare_optiuniEnergie();cout<<endl<<endl;
     cout<<"What you want to convert?"<<endl;
     cin>>From;
-        while(From<0 || From>8)
+        while(From<0 || From>7)
         {
             cout<<"This option doesn`t exist.Please choose another one."<<endl;
             cin>>From;
         }
         cout<<"In what you want to convert?"<<endl;
         cin>>To;
-            while(To<1 || To>8)
+            while(To<1 || To>7)
             {
                 cout<<"This option doesn`t exist.Please choose another one."<<endl;
                 cin>>To;
             }
             cout<<"What quantity do you want to convert?"<<endl;
             cin>>Quant;
+            convertesteEnergie(From,To,Quant);
 }
-void choose_and_printPresiune()//10
+void choose_and_printPresiune()//9 ok
 {
     int From,To,Quant;
     afisare_optiuniPresiune();cout<<endl<<endl;
     cout<<"What you want to convert?"<<endl;
     cin>>From;
-        while(From<0 || From>10)
+        while(From<0 || From>9)
         {
             cout<<"This option doesn`t exist.Please choose another one."<<endl;
             cin>>From;
         }
         cout<<"In what you want to convert?"<<endl;
         cin>>To;
-            while(To<1 || To>10)
+            while(To<1 || To>9)
             {
                 cout<<"This option doesn`t exist.Please choose another one."<<endl;
                 cin>>To;
             }
             cout<<"What quantity do you want to convert?"<<endl;
             cin>>Quant;
+            convertestePresiune(From,To,Quant);
 }
 void choose_and_printDensitate()//11 ok
 {
@@ -1171,9 +1884,51 @@ void choose_and_printConsum()//4 ok
 
 int main()
 {
-	int alegere,ok=1,from,to;
-    choose_and_printArie();
-	cin.get(); cin.get();
+	int alegere,ok=1,continua;
+    afis();
+    while(ok==1)
+    {
+        cout<<"Choose what to convert:"<<endl<<endl<<endl;;
+        afisare_optiuni();
+        cin>>alegere;
+        while(alegere<0 || alegere >12)
+        {
+            cout<<"This option doesn`t exist.Please choose a valid option."<<endl;
+            cin>>alegere;
+        }
+        switch(alegere){
+            case 1:system("CLS");choose_and_printLungime();break;
+            case 2:system("CLS");choose_and_printArie();break;
+            case 3:system("CLS");choose_and_printVolum();break;
+            case 4:system("CLS");choose_and_printTimp();break;
+            case 5:system("CLS");choose_and_printViteza();break;
+            case 6:system("CLS");choose_and_printTemperatura();break;
+            case 7:system("CLS");choose_and_printMasa();break;
+            case 8:system("CLS");choose_and_printEnergie();break;
+            case 9:system("CLS");choose_and_printPresiune();break;
+            case 10:system("CLS");choose_and_printDensitate();break;
+            case 11:system("CLS");choose_and_printConsum();break;
+            default:break;
+        }
+        cout<<endl;
+        cout<<"Do you want to make another convertion?"<<endl;
+        cout<<"1.Yes."<<endl;
+        cout<<"0.No."<<endl;
+        cin>>continua;
+        while(continua<0 || continua>1)
+        {
+            cout<<"This option doesn`t exist.Please choose a valid option."<<endl;
+            cin>>continua;
+        }
+        if(continua==0)
+            ok=0;
+        else
+        {
+            ok=1;
+            system("CLS");
+        }
+
+    }
 	return 0;
 }
 // For clean screen system("CLS");
